@@ -1,0 +1,556 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7A612C2822577BF20062DEFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A612C2722577BF20062DEFE /* AppDelegate.swift */; };
+		7A612C2D22577BF20062DEFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A612C2B22577BF20062DEFE /* Main.storyboard */; };
+		7A612C3022577BF20062DEFE /* YOYOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7A612C2E22577BF20062DEFE /* YOYOS.xcdatamodeld */; };
+		7A612C3222577BF30062DEFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A612C3122577BF30062DEFE /* Assets.xcassets */; };
+		7A612C3522577BF30062DEFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A612C3322577BF30062DEFE /* LaunchScreen.storyboard */; };
+		7A612C4022577BF30062DEFE /* YOYOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A612C3F22577BF30062DEFE /* YOYOSTests.swift */; };
+		7A83DF3F2257C947003732F3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A83DF3E2257C947003732F3 /* LoginViewController.swift */; };
+		9C6ECA21A306B50BB0EEAC31 /* Pods_YOYOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ACA30ED6DCA9CEAEDDD00F6 /* Pods_YOYOS.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7A612C3C22577BF30062DEFE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7A612C1C22577BF20062DEFE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7A612C2322577BF20062DEFE;
+			remoteInfo = YOYOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2C39156B9ECA2F73ED9CA1FF /* Pods-YOYOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YOYOS.release.xcconfig"; path = "Target Support Files/Pods-YOYOS/Pods-YOYOS.release.xcconfig"; sourceTree = "<group>"; };
+		54211A11B489BBDAD33C94A5 /* Pods-YOYOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YOYOS.debug.xcconfig"; path = "Target Support Files/Pods-YOYOS/Pods-YOYOS.debug.xcconfig"; sourceTree = "<group>"; };
+		7A612C2422577BF20062DEFE /* YOYOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YOYOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A612C2722577BF20062DEFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7A612C2C22577BF20062DEFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7A612C2F22577BF20062DEFE /* YOYOS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = YOYOS.xcdatamodel; sourceTree = "<group>"; };
+		7A612C3122577BF30062DEFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7A612C3422577BF30062DEFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7A612C3622577BF30062DEFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A612C3B22577BF30062DEFE /* YOYOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YOYOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A612C3F22577BF30062DEFE /* YOYOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YOYOSTests.swift; sourceTree = "<group>"; };
+		7A612C4122577BF30062DEFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A83DF3E2257C947003732F3 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		7ACA30ED6DCA9CEAEDDD00F6 /* Pods_YOYOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YOYOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7A612C2122577BF20062DEFE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C6ECA21A306B50BB0EEAC31 /* Pods_YOYOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A612C3822577BF30062DEFE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		035DA559A228305189F606FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7ACA30ED6DCA9CEAEDDD00F6 /* Pods_YOYOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7A00F40A2257B0F8007A4F0B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7A83DF3E2257C947003732F3 /* LoginViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		7A612C1B22577BF20062DEFE = {
+			isa = PBXGroup;
+			children = (
+				7A612C2622577BF20062DEFE /* YOYOS */,
+				7A612C3E22577BF30062DEFE /* YOYOSTests */,
+				7A612C2522577BF20062DEFE /* Products */,
+				C1C47FAA096DDB3E5A502527 /* Pods */,
+				035DA559A228305189F606FC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7A612C2522577BF20062DEFE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7A612C2422577BF20062DEFE /* YOYOS.app */,
+				7A612C3B22577BF30062DEFE /* YOYOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7A612C2622577BF20062DEFE /* YOYOS */ = {
+			isa = PBXGroup;
+			children = (
+				7A00F40A2257B0F8007A4F0B /* Controllers */,
+				7A612C2722577BF20062DEFE /* AppDelegate.swift */,
+				7A612C2B22577BF20062DEFE /* Main.storyboard */,
+				7A612C3122577BF30062DEFE /* Assets.xcassets */,
+				7A612C3322577BF30062DEFE /* LaunchScreen.storyboard */,
+				7A612C3622577BF30062DEFE /* Info.plist */,
+				7A612C2E22577BF20062DEFE /* YOYOS.xcdatamodeld */,
+			);
+			path = YOYOS;
+			sourceTree = "<group>";
+		};
+		7A612C3E22577BF30062DEFE /* YOYOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				7A612C3F22577BF30062DEFE /* YOYOSTests.swift */,
+				7A612C4122577BF30062DEFE /* Info.plist */,
+			);
+			path = YOYOSTests;
+			sourceTree = "<group>";
+		};
+		C1C47FAA096DDB3E5A502527 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				54211A11B489BBDAD33C94A5 /* Pods-YOYOS.debug.xcconfig */,
+				2C39156B9ECA2F73ED9CA1FF /* Pods-YOYOS.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7A612C2322577BF20062DEFE /* YOYOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A612C4422577BF30062DEFE /* Build configuration list for PBXNativeTarget "YOYOS" */;
+			buildPhases = (
+				476AB60DC29E611D93A5CDB1 /* [CP] Check Pods Manifest.lock */,
+				7A612C2022577BF20062DEFE /* Sources */,
+				7A612C2122577BF20062DEFE /* Frameworks */,
+				7A612C2222577BF20062DEFE /* Resources */,
+				987FD118F1306519E39AE301 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YOYOS;
+			productName = YOYOS;
+			productReference = 7A612C2422577BF20062DEFE /* YOYOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7A612C3A22577BF30062DEFE /* YOYOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A612C4722577BF30062DEFE /* Build configuration list for PBXNativeTarget "YOYOSTests" */;
+			buildPhases = (
+				7A612C3722577BF30062DEFE /* Sources */,
+				7A612C3822577BF30062DEFE /* Frameworks */,
+				7A612C3922577BF30062DEFE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7A612C3D22577BF30062DEFE /* PBXTargetDependency */,
+			);
+			name = YOYOSTests;
+			productName = YOYOSTests;
+			productReference = 7A612C3B22577BF30062DEFE /* YOYOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7A612C1C22577BF20062DEFE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = park.mail.ru;
+				TargetAttributes = {
+					7A612C2322577BF20062DEFE = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					7A612C3A22577BF30062DEFE = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 7A612C2322577BF20062DEFE;
+					};
+				};
+			};
+			buildConfigurationList = 7A612C1F22577BF20062DEFE /* Build configuration list for PBXProject "YOYOS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7A612C1B22577BF20062DEFE;
+			productRefGroup = 7A612C2522577BF20062DEFE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7A612C2322577BF20062DEFE /* YOYOS */,
+				7A612C3A22577BF30062DEFE /* YOYOSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7A612C2222577BF20062DEFE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A612C3522577BF30062DEFE /* LaunchScreen.storyboard in Resources */,
+				7A612C3222577BF30062DEFE /* Assets.xcassets in Resources */,
+				7A612C2D22577BF20062DEFE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A612C3922577BF30062DEFE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		476AB60DC29E611D93A5CDB1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YOYOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		987FD118F1306519E39AE301 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YOYOS/Pods-YOYOS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YOYOS/Pods-YOYOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7A612C2022577BF20062DEFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A83DF3F2257C947003732F3 /* LoginViewController.swift in Sources */,
+				7A612C3022577BF20062DEFE /* YOYOS.xcdatamodeld in Sources */,
+				7A612C2822577BF20062DEFE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A612C3722577BF30062DEFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A612C4022577BF30062DEFE /* YOYOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7A612C3D22577BF30062DEFE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7A612C2322577BF20062DEFE /* YOYOS */;
+			targetProxy = 7A612C3C22577BF30062DEFE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7A612C2B22577BF20062DEFE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7A612C2C22577BF20062DEFE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7A612C3322577BF30062DEFE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7A612C3422577BF30062DEFE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7A612C4222577BF30062DEFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7A612C4322577BF30062DEFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7A612C4522577BF30062DEFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54211A11B489BBDAD33C94A5 /* Pods-YOYOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YOYOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = park.mail.ru.YOYOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7A612C4622577BF30062DEFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C39156B9ECA2F73ED9CA1FF /* Pods-YOYOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YOYOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = park.mail.ru.YOYOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7A612C4822577BF30062DEFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YOYOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = park.mail.ru.YOYOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YOYOS.app/YOYOS";
+			};
+			name = Debug;
+		};
+		7A612C4922577BF30062DEFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YOYOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = park.mail.ru.YOYOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YOYOS.app/YOYOS";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7A612C1F22577BF20062DEFE /* Build configuration list for PBXProject "YOYOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A612C4222577BF30062DEFE /* Debug */,
+				7A612C4322577BF30062DEFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7A612C4422577BF30062DEFE /* Build configuration list for PBXNativeTarget "YOYOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A612C4522577BF30062DEFE /* Debug */,
+				7A612C4622577BF30062DEFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7A612C4722577BF30062DEFE /* Build configuration list for PBXNativeTarget "YOYOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A612C4822577BF30062DEFE /* Debug */,
+				7A612C4922577BF30062DEFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7A612C2E22577BF20062DEFE /* YOYOS.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7A612C2F22577BF20062DEFE /* YOYOS.xcdatamodel */,
+			);
+			currentVersion = 7A612C2F22577BF20062DEFE /* YOYOS.xcdatamodel */;
+			path = YOYOS.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 7A612C1C22577BF20062DEFE /* Project object */;
+}
