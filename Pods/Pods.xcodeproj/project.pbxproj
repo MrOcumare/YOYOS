@@ -6,87 +6,489 @@
 	objectVersion = 50;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		33FD49C316A380C97D6435712607313B /* Mapbox-iOS-SDK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 83F7A7525EE724C50FF6E579E6AB7E7F /* Build configuration list for PBXAggregateTarget "Mapbox-iOS-SDK" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = "Mapbox-iOS-SDK";
+		};
+		49EC2F2E4B057B8A5A2956F5263AE094 /* MapwizeForMapbox */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 920E08ACD9C8972D874CE8B694EDB8C4 /* Build configuration list for PBXAggregateTarget "MapwizeForMapbox" */;
+			buildPhases = (
+			);
+			dependencies = (
+				D9E64B2298B2E675A0EDE75F2BAD54B3 /* PBXTargetDependency */,
+				91D937821B2BF0461888048320BCCC6C /* PBXTargetDependency */,
+				0FB3FC9F37163DBD11498D59E264D154 /* PBXTargetDependency */,
+			);
+			name = MapwizeForMapbox;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
-		059D92B7BBFBEC53E9A3B6E11C5C3B3A /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC6858C85690F7AFEA7F6542EE9A69A /* Response.swift */; };
-		0A39AF55285A3A4F7CBABB6D822FA4A3 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C15C076B531E2E7744C358418A0C0B5 /* Alamofire.swift */; };
-		1D29D2ACADF961F69D32B06FA6A09E28 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06639F7A76DB8A9D0D0E41CDD7A6684 /* Notifications.swift */; };
-		355C18EEC82624A06A6CC93965258E33 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D59E1AD3CC394A93392FF3DC8CF2961 /* Request.swift */; };
+		013E286346FCF5256880B3AD3B1AF97B /* MWZComponentTitleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 917B52C8046C1A65D64916BE1349B213 /* MWZComponentTitleCell.m */; };
+		0193320C416867007C8A8B0231DCD669 /* Pods-YOYOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C73A929E324D92FD43E3A2F2C64E4FAE /* Pods-YOYOS-dummy.m */; };
+		02FE22D10053A8B7E0FD81827E934695 /* SSZipArchive-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 12D4E28DF491FA4EDA000455AA608E04 /* SSZipArchive-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		059D92B7BBFBEC53E9A3B6E11C5C3B3A /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EA557A195B578EAA0B58ACA3023742 /* Response.swift */; };
+		0606FB6C439CBFB9E4EACF220AECC63E /* pwd2key.h in Headers */ = {isa = PBXBuildFile; fileRef = 27C087EF26714960426171345CDAEFB7 /* pwd2key.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		07460F820AA90F7FD6E46C4883F24ECD /* MWZComponentTitleWithoutFloorCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EBF1E7D6715BAC85B622A18F4171D9F /* MWZComponentTitleWithoutFloorCellTableViewCell.m */; };
+		0853BC5666B123E898DCC1590E5BCFA0 /* MWZComponentTitleWithoutFloorCellTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = D1FEE037F6A31B7DACC8CF8A8861D7A7 /* MWZComponentTitleWithoutFloorCellTableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		085A0A9BF7EE55442630CF0DBDCF7330 /* MWZComponentCurrentLocationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 90A2673341B0C3E9A086035A613402D2 /* MWZComponentCurrentLocationView.m */; };
+		0A39AF55285A3A4F7CBABB6D822FA4A3 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A45605474B882BC2840DFB787284B5 /* Alamofire.swift */; };
+		0C3D0CE175A895B4D94755D63688D701 /* MWZComponentDirectionBar.m in Sources */ = {isa = PBXBuildFile; fileRef = CF240AF19C50E7AE6D0ADA4DA10D0206 /* MWZComponentDirectionBar.m */; };
+		0C930430197A709A89DE1B584325D647 /* MWZComponentQrCodeButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C9C04A6ECA6154CE2F6A2B2CDBAD610 /* MWZComponentQrCodeButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0CE8200D197B029134E0526D02D89493 /* MWZComponentDirectionBar.h in Headers */ = {isa = PBXBuildFile; fileRef = F933622FF48C66DAA2DEF418FE2F6B58 /* MWZComponentDirectionBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0E55E8898CFC992BBFEADAE424B44AC7 /* aestab.c in Sources */ = {isa = PBXBuildFile; fileRef = FB006E5D8F39B854324719E2C77B2C8C /* aestab.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		0F37EF98470C99113C6F0343AB5CEACC /* Pods-YOYOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F2B330A485FE03A8E0AE7ED98B320ED /* Pods-YOYOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		106345F365407C6FA4A8E286353BC2AD /* en.lproj in Resources */ = {isa = PBXBuildFile; fileRef = CBB91380C3A9737380B63FE072142155 /* en.lproj */; };
+		12A51B81378B6416B305D720DFC1A384 /* MWZComponentIconTextButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1C2E22D75AC65315708E41C641A674 /* MWZComponentIconTextButton.m */; };
+		140157E5B6EE4AE1FC540AD0746DBC53 /* MWZComponentFollowUserButtonDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = EBAEDCBFD568F91E6E7372A5BD965DE5 /* MWZComponentFollowUserButtonDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19C36E782A712849BD7CC0613013698E /* MWZComponentSubtitleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F46A6F9E1A502A831A86EB358B184AE0 /* MWZComponentSubtitleCell.m */; };
+		1D29D2ACADF961F69D32B06FA6A09E28 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FB3C27B6563AB00EB8C55FF35730AE /* Notifications.swift */; };
+		1FF0C2E9DF1E6A994C901C37872554F5 /* ZipArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = 9478F3825387470391C59AC5DFDCED5E /* ZipArchive.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		242E4E21393082422C6030877B6164E4 /* MWZUIOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0A703912C420FC9EDBB30D567404C3 /* MWZUIOptions.m */; };
+		24D855BBB3AA3C6F7F086FB391824651 /* MWZComponentGroupedResultList.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F2C5CF45C05BC6FF8807E177537F8EC /* MWZComponentGroupedResultList.m */; };
+		26D1F61CDBF5E575F9F552653DFBA0EC /* ioapi_buf.c in Sources */ = {isa = PBXBuildFile; fileRef = 4BD28478B58437F5704522F5D80BC116 /* ioapi_buf.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		277FCBD29879350F95C9E70D593F2508 /* unzip.h in Headers */ = {isa = PBXBuildFile; fileRef = 096FE8577A16B99AE77A0E7008233E51 /* unzip.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		283DB96118F8939FDC542AE12810ADE5 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 9B63C848288CA4D21A4828C3E15BC260 /* ioapi.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		290078B31A021792B457C84B5A5A3FD4 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 50D02D39E48C5309D700095173FE1A01 /* zip.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		2A41E60A47B17D51A1FD1FA1B0028DF4 /* MWZComponentCompassDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BC516404DDED2DCE75DC4E13B861D39 /* MWZComponentCompassDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2BDB02681973038BDCC6D9F439578737 /* MWZMapwizeViewDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 1967AC0498B61D6E8603BEDE82605791 /* MWZMapwizeViewDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C7D7CA9BC3F845C22508E965DC52CB6 /* aestab.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E65926AD7CAACD657BE81EF3D70D880 /* aestab.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2E3B1D13C18CEDA20F343E0D9FF3B260 /* MWZComponentCompass.h in Headers */ = {isa = PBXBuildFile; fileRef = 474AA80F99C3E62FBBC77E3AD55F54C3 /* MWZComponentCompass.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3364BC826D496343B8E5FD2E81DE95FB /* MWZComponentQrCodeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1746CAFD4D639F7002563721D2E47DD7 /* MWZComponentQrCodeButton.m */; };
+		355C18EEC82624A06A6CC93965258E33 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C40F937CAA2C57FF18C360166AA7DB1 /* Request.swift */; };
+		36D4A696AAB2AC36F43086D4C2F310B6 /* MWZMapwizeViewUISettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D4A43E44C78A7ED3C2815A61727A75B /* MWZMapwizeViewUISettings.m */; };
+		39C709B148339FD61D86C1F980A7D510 /* MWZComponentFloorView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5ED658E37CE0FD7E391307F87A9D2800 /* MWZComponentFloorView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		39D399C26D9C144CAB235B8A2728E6A3 /* MWZComponentUniversesButtonDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 865882D724CCCC2A36B122EB3A4C3171 /* MWZComponentUniversesButtonDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3AA8C76B9FD4566F29CF6D9F66ECAD0C /* MWZComponentBottomInfoView.h in Headers */ = {isa = PBXBuildFile; fileRef = 881768668C80ECEB407738A8304268E2 /* MWZComponentBottomInfoView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B804FCC7297326C2E75C8EA354907A5 /* MWZComponentTitleCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 9681BF23A1743FD8AF942304A7F1EB67 /* MWZComponentTitleCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3BD1DAFE1F3E6C9E4EB0F2099B6D6FA2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
-		3E0749AF6C51BCF0E4A41CF1D6A76FED /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF7F7716086D54E6308EE52C8227B87 /* DispatchQueue+Alamofire.swift */; };
-		60B6C2A003864AAD3A426448152F67BE /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DB5272AD01ECD0B09A86818A7754C4 /* Timeline.swift */; };
-		6EFD003458AE7F689DEA720A2030C261 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B03859BDC36782899379E222720A297 /* ResponseSerialization.swift */; };
-		700D3D95AF9520CB227846DFD943A2DA /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D01BA8472F25D39F718F71557EDC8DD /* ParameterEncoding.swift */; };
-		73AB05789A4982944AF68DBD013E3EB7 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5460AD0F6241621B45A17AB23A8E5B7 /* NetworkReachabilityManager.swift */; };
-		772911DA6E33D1CBBC30131B7C8BDBB3 /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BE16989701DCA0B781F86A093D7C5E22 /* Alamofire-dummy.m */; };
-		77E8F0EB9FFBE2E3EB0C77095C644606 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C759635F88377BD7E2DEDE04C23C62 /* TaskDelegate.swift */; };
-		7E3538A6992A38276764936A9733493D /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5A0E300C04A6DF88D620788FE38780 /* AFError.swift */; };
-		829E6E353926625A35E0EE37F73C4380 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
-		8D2A6A90A6DDAF75EA52D471258545CC /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4453BE339B79900FDC53E34FE5589CB /* ServerTrustPolicy.swift */; };
-		99BAF3B34379CF6AC006BEE3273AE542 /* Pods-YOYOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C73A929E324D92FD43E3A2F2C64E4FAE /* Pods-YOYOS-dummy.m */; };
-		A1EC41966B261DCE460BCDE5124A1DBE /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F640F61D5BEE8132009BAEAA65B587A4 /* SessionDelegate.swift */; };
-		AA56769D8733D3F3E7976742D5ABA998 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33115EC2A5164913C68F8BD170389EEE /* Validation.swift */; };
-		AEA829AB1A8AF2AD077A808AED6B178A /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCE3D7EDCA41F256D471B40BBFD3FCE /* MultipartFormData.swift */; };
-		B6F6E4CC26451E91B59FAE0F6841DC1F /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 15A825CFEBAE606149BF0047C9F5B209 /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D3CD6CA17A77CFD21365DC130286843C /* Pods-YOYOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F2B330A485FE03A8E0AE7ED98B320ED /* Pods-YOYOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D3FA0AA634AAEA99AB3FABC36BB4958C /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7E25E371731FAE44F46A9F392CB5D5 /* SessionManager.swift */; };
-		EB0DD8CEA1A69867A30267439C970440 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD807F155301ECA538A2C1C296E1186D /* Result.swift */; };
+		3D3D070E6DA6FB94101E06B9619148C6 /* minishared.c in Sources */ = {isa = PBXBuildFile; fileRef = 012DC6F530BE46D06988C460573ACFE5 /* minishared.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		3E0749AF6C51BCF0E4A41CF1D6A76FED /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB6FAD8B5CFC5162D719ED0C1F71039 /* DispatchQueue+Alamofire.swift */; };
+		44D9B5B20DB415EA6A0D5A54EFE9AF3B /* MWZComponentFloorController.h in Headers */ = {isa = PBXBuildFile; fileRef = 35271E130C2BDDE5AFD6DEA727537294 /* MWZComponentFloorController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		463963FD3FB61260227EF1DEF945DC91 /* aescrypt.c in Sources */ = {isa = PBXBuildFile; fileRef = F4A40BC30F8A3825DB731884DBDF7B18 /* aescrypt.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		47553C4524C885AB67CB8B0C4A0674A2 /* IndoorLocation-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 619C0BC7555A0A829D451BC2EFA64CBE /* IndoorLocation-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		48009BC3E91B03980150785CA839D0CB /* ILIndoorLocationProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F8B1659F7CA40B61A0CF176D198D95D /* ILIndoorLocationProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		498DF66AE0B68ECDEF4EE52EA3B4262F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		49D4CBEA39FE6A2AE35A8F2F2F08AB74 /* aeskey.c in Sources */ = {isa = PBXBuildFile; fileRef = C004A9D4AB6EE5908B8E055FE9107FC3 /* aeskey.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		4A351E3E8D2BFB99C2C0BDC143B9B01C /* ILIndoorLocationProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A01EA614BFA904961A09F5646FDD78 /* ILIndoorLocationProvider.m */; };
+		4C04A168DF5311449E975A6635DF2AB4 /* MWZComponentResultList.m in Sources */ = {isa = PBXBuildFile; fileRef = 47434C4BC6FA0335F9EAF841D380F2EB /* MWZComponentResultList.m */; };
+		4C26CB6DB37B0155FBD3ECEA764C8E95 /* MWZComponentFloorController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EC84D0BE1BEDC8863EA46FF88AD697A /* MWZComponentFloorController.m */; };
+		4C7525ADC2D3F2A1BB697192EA5B513A /* fileenc.c in Sources */ = {isa = PBXBuildFile; fileRef = 648349CC6873ED119F18D0C4896C400D /* fileenc.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		4D472264322C52E8E32039A22D45A22C /* aes_ni.c in Sources */ = {isa = PBXBuildFile; fileRef = 62F4F18F0A2FEF722059EED094338E9F /* aes_ni.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		4D94A4505ED9D69D654F9235849A116C /* MWZComponentLoadingBar.h in Headers */ = {isa = PBXBuildFile; fileRef = CB2DD3F3321C851B5BC4F2C7AF366C5B /* MWZComponentLoadingBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4DEED421D5C39C1D30A0A4BA9722862E /* MWZComponentDirectionInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C32F45BFE02B2E314EC56D33B7DE237 /* MWZComponentDirectionInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5450CA6036F8332BE381FB66DDEA6830 /* pwd2key.c in Sources */ = {isa = PBXBuildFile; fileRef = E4CC1C47D45E07CCD2C0FFAEEE852C5D /* pwd2key.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		56B6BE1648C48A7002B25EC244A523DE /* IndoorLocation-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B66AC6ABCAD23929829B5410C3C8D01 /* IndoorLocation-dummy.m */; };
+		5C922994594A0B87A307CBAE46AE7F53 /* MWZComponentFollowUserButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F7AEADDE89F1EE6480AAB2395A99F61 /* MWZComponentFollowUserButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F7211DD5FBC84DE717CE43CD44708BC /* prng.c in Sources */ = {isa = PBXBuildFile; fileRef = 5BD7FAC0D64590A19DD6EF4CC5ABF73F /* prng.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		60B6C2A003864AAD3A426448152F67BE /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5E6EEACA02E5C433EB44D1B71BE3E8 /* Timeline.swift */; };
+		642238DB589BEC23F96F6D2ACDDD313A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		643864D6B70556299F05C1F01153168E /* MapwizeUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C021BA467E201794E905F660885F8B0 /* MapwizeUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		69333292EF096612AE1085AF5C3D838C /* ioapi_mem.c in Sources */ = {isa = PBXBuildFile; fileRef = 43F8BD74EE56F774CED718C3F3059DBB /* ioapi_mem.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		6C47F6ED41FEB9ED024B96756010146F /* fileenc.h in Headers */ = {isa = PBXBuildFile; fileRef = E5FA0AD097A56542FF28A3B6973D955B /* fileenc.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6D30B4E34CFC264F4A2A47B5156BA835 /* MWZComponentCompass.m in Sources */ = {isa = PBXBuildFile; fileRef = 7158D455D81379F06617AC37FC5148AC /* MWZComponentCompass.m */; };
+		6EFD003458AE7F689DEA720A2030C261 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = D992961F06902BB08C966482AE1C6BDE /* ResponseSerialization.swift */; };
+		6F7A1F164ABC269F8AB018BD1D99DADB /* MWZComponentLanguagesButton.h in Headers */ = {isa = PBXBuildFile; fileRef = CA6EA043428D44F5C181030A2070C0E0 /* MWZComponentLanguagesButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		700D3D95AF9520CB227846DFD943A2DA /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEA517414EB5A1F4F2582ECC8344178 /* ParameterEncoding.swift */; };
+		703DDB6284EC57A54D18E43B16FAE7C9 /* MWZComponentColors.h in Headers */ = {isa = PBXBuildFile; fileRef = A949F741333145F574B56A9BE62F92B1 /* MWZComponentColors.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		739A49CFA370B72D6619DE11384B683A /* MWZComponentUniversesButton.h in Headers */ = {isa = PBXBuildFile; fileRef = D6CDEB7B77CCAE5A8D211A20F190F380 /* MWZComponentUniversesButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73AB05789A4982944AF68DBD013E3EB7 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A024354F3D2B99E2D70B198EADCB0AE7 /* NetworkReachabilityManager.swift */; };
+		73DE6629B45C4850A3119D7A9F1FD4BF /* MWZComponentResultList.h in Headers */ = {isa = PBXBuildFile; fileRef = 3EF03F60E96B48CAAEA782B432291A30 /* MWZComponentResultList.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		749DBF6FC78EE6DB345930871F3A383A /* aes.h in Headers */ = {isa = PBXBuildFile; fileRef = E06E7C196EFB19D51C618DFAC40FA264 /* aes.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		772911DA6E33D1CBBC30131B7C8BDBB3 /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A3F3E4216F40B7A9EC7DEF6F50A8FD07 /* Alamofire-dummy.m */; };
+		776EEB9F01AB2D1A256EF36A1BBD1FA6 /* MWZComponentDirectionBarDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 971B2B928534FF9E08E6D8DA461E262D /* MWZComponentDirectionBarDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		77E8F0EB9FFBE2E3EB0C77095C644606 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69EF2D2FA1B047F1D6C2B78FACAF897C /* TaskDelegate.swift */; };
+		7865993B71E0BCB8F2C84DE69FB6E642 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		7ABB259F16286E9C3E59626C965106E5 /* ioapi_mem.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E7D6AFEC006402412F58536FACFD6F3 /* ioapi_mem.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7E3538A6992A38276764936A9733493D /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FB2790C38CCC14E9AFBC347476FD88 /* AFError.swift */; };
+		835454E56D2EE2D1AD796D445DE3FDC4 /* MWZComponentBottomInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8DF236C79FDB7309757B3E69932EA38 /* MWZComponentBottomInfoView.m */; };
+		8728249C60E099B12F2A4A7E27956F87 /* brg_types.h in Headers */ = {isa = PBXBuildFile; fileRef = AE4B384D31CB83236C1C0A5594010BEF /* brg_types.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		89173BC15C329316685E649D72F143A1 /* MWZIndoorLocation.h in Headers */ = {isa = PBXBuildFile; fileRef = 78D1447667EA0DD84BDB4643204E81D1 /* MWZIndoorLocation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8D2A6A90A6DDAF75EA52D471258545CC /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC74DCB566B40642242D2B23286DB6D1 /* ServerTrustPolicy.swift */; };
+		904AED4511F28C864CBE9A771671EE5E /* ioapi.h in Headers */ = {isa = PBXBuildFile; fileRef = 41632AD657B62EA3982B6AC5ECDC537D /* ioapi.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		92C4577CF16F4979DA21426D92D5E177 /* MWZComponentSearchBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A404795D8D21BC9EEACF9C9996AEC2F /* MWZComponentSearchBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		94DA31445BC367095D6E38BF831E7B67 /* mwzimages.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B124DD5BA24DC063D394AE855AE18A0 /* mwzimages.xcassets */; };
+		96CCDD362B344DC1F6595FA2F86FD692 /* ioapi_buf.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E813CA30902014FCC346000C644691E /* ioapi_buf.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		97CCC4CA9938608B7AA6219A01F2DE1E /* MWZComponentGroupedResultList.h in Headers */ = {isa = PBXBuildFile; fileRef = 986F696EF0D5C7538FCCC634A9877002 /* MWZComponentGroupedResultList.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9953A5BFC517944164C08FE266520476 /* MWZComponentLanguagesButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0360EB9D101D0E3B6FAD47F78CA4666C /* MWZComponentLanguagesButton.m */; };
+		9979E499E47F22B79CD434B774EB9739 /* MWZComponentColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F5B78493F1BEB507CCB373DD581C166 /* MWZComponentColors.m */; };
+		9B478DB3E4DBF9C85B6CB6F5F8A17A38 /* SSZipCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = FEC23E326EB9A987A9C78913A5E96348 /* SSZipCommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9FE1F8EF316C4ABC5638680E83E61756 /* sha1.h in Headers */ = {isa = PBXBuildFile; fileRef = FA6D1444810BF3935C4DFE4EED8D0FA9 /* sha1.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A1EC41966B261DCE460BCDE5124A1DBE /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D080947C88AF01D927260DB3143E4A /* SessionDelegate.swift */; };
+		A5E9E0C1E1859F93012F0EE56FB3C9AB /* MWZComponentBottomInfoViewDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 06BDF39F7865FB0D9CD0C1FFAA8F31CA /* MWZComponentBottomInfoViewDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A76378F4A53617B40F4C7541BB01C6FA /* aes_ni.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A40EF1558F323685929980CCDA321EF /* aes_ni.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		AA56769D8733D3F3E7976742D5ABA998 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3180D9674FA20D51536F9712AB8289 /* Validation.swift */; };
+		AAB4D53FC78A98B1670033EBE25A409C /* SSZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = 22AFA50A971E9D6D83A0DBDC714B4C99 /* SSZipArchive.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		AEA829AB1A8AF2AD077A808AED6B178A /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358E75D4D76B134E04E229C4C315D19D /* MultipartFormData.swift */; };
+		AEB5562119E6D7C6256837C84E74D4A9 /* MWZComponentGroupedResultListDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = BDD6DBAFBB76DF008B9822AC239966A4 /* MWZComponentGroupedResultListDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AEB72C2C49A8C19440EAF24080DB2CBF /* MWZComponentLanguagesButtonDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = CB9DDEB0A88C1546F99289F6C11091C1 /* MWZComponentLanguagesButtonDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AF480A6B319DFEA00C68735BE7A2A76C /* MWZComponentSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 952C3C4F43714F06EDE4604955035E83 /* MWZComponentSearchBar.m */; };
+		AF8879667E884B5014A9861ACD87051F /* MWZSearchData.h in Headers */ = {isa = PBXBuildFile; fileRef = 3FC07D9A6B876E6CBCD375B1CA8CE7D6 /* MWZSearchData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4B2EACC769B2D9DA10D0E7E30D702FE /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 1F598EB879B83487A83A9B84222F3094 /* unzip.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		B6F6E4CC26451E91B59FAE0F6841DC1F /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 88AAF9E7552FC54062A4D73F92B73B23 /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B8D01B3B6E9E23B7E2251792AAE96D5D /* ILIndoorLocation.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C28500DE3CC003191A2B753ED291B27 /* ILIndoorLocation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B91DFDBA6039D23D2D5787B03FCEC783 /* SSZipArchive-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B8363B66C6EC433FF121743C20242B4 /* SSZipArchive-dummy.m */; };
+		B9FD977D51C96B9257A57E5B7D348C43 /* MWZComponentBorderedTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 7878DDAAF62C5E4D54A95109F8054A24 /* MWZComponentBorderedTextField.m */; };
+		BAC093CCFB1634DDE9B4034EE16C36D0 /* MWZUIOptions.h in Headers */ = {isa = PBXBuildFile; fileRef = E423A294D2E9E96CB9DFBB222B69BD12 /* MWZUIOptions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BD68C7741278A7C859C82BC02BC5F478 /* zip.h in Headers */ = {isa = PBXBuildFile; fileRef = BC9DDE0D091856589D44ADDBEED4EB16 /* zip.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BED4344C398CFF1B3DCDCFC0F9FC8901 /* hmac.h in Headers */ = {isa = PBXBuildFile; fileRef = DD21BE9831F654C6159A67C3EE98AB19 /* hmac.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C0672AC7C1D7F249FDF393A437155CFF /* MWZComponentQrCodeButtonDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = D27355383B9E2DD2FD0FB24558405853 /* MWZComponentQrCodeButtonDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C2D7E3D7EB1EDC1AB3046CD9869E9BC8 /* IndoorLocation.h in Headers */ = {isa = PBXBuildFile; fileRef = D1E11D1D1C37EADFE8A1FE84BF430E2E /* IndoorLocation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C7E00522F42BCD2E1E9C6128AE906044 /* MWZComponentLoadingBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 11429941570553AC5BAAF70098F3A451 /* MWZComponentLoadingBar.m */; };
+		C88A8B1CA70830774C496686C94EBD28 /* MWZComponentResultListDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F743720023BA46D62178BA4F31BBDEF /* MWZComponentResultListDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C9F9F9BBBE217E7BC9FD7D352B0D58C6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		CA923BD41EA5F1C92524A0D64CA27811 /* MWZComponentDirectionInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E1EF410F856C4E5F9368A75B03925DDF /* MWZComponentDirectionInfo.m */; };
+		CB384EAC0E902C39DA0F04DA590D444C /* MWZMapwizeViewUISettings.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A4FE140062739181F8B1C6E582F4EFD /* MWZMapwizeViewUISettings.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CDD24F11B8978D58FC9809CE96698578 /* ILIndoorLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = D75652A8C0BB4E02045ED44443418002 /* ILIndoorLocation.m */; };
+		CDEC7A3EFEB0B027C64441E1D63E3EC4 /* MWZComponentCurrentLocationView.h in Headers */ = {isa = PBXBuildFile; fileRef = B62B75BB03983B5380587E4EDD33B5B7 /* MWZComponentCurrentLocationView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE54BE864A61D2A0012CC629193885C6 /* MWZSearchData.m in Sources */ = {isa = PBXBuildFile; fileRef = 9501D1F128E67A15F8FCC8DEC8EED6D4 /* MWZSearchData.m */; };
+		CE5C3D52B560A5E222448274F211B65B /* MapwizeUI-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1018633D45B94870EC6D4E9DE7396650 /* MapwizeUI-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D07225EFA8D542D7B0D04300185C103B /* hmac.c in Sources */ = {isa = PBXBuildFile; fileRef = 437C16D132702DF03F40AA0583E66258 /* hmac.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		D3BBE994BB6FF462B2DF1AE3FE90D5A2 /* ILIndoorLocationProviderDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = FC4AF873366D7050BD5633114AD33843 /* ILIndoorLocationProviderDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D3FA0AA634AAEA99AB3FABC36BB4958C /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D496AE8D9999120521941F6298EB8F2F /* SessionManager.swift */; };
+		D4DF3A7D3016E8CA86BF52733517B155 /* MWZComponentIconTextButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 977E40530391DB663595FD1001BFDBB4 /* MWZComponentIconTextButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D6ACFF9E178C72353131B4645144FB3D /* prng.h in Headers */ = {isa = PBXBuildFile; fileRef = EBA195C516E9994CA01E938FD7BBAED2 /* prng.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D6D274BEEE8ECCF1B202EC6EA12CD6D8 /* MWZComponentBorderedTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B14602E08441FC6B3F5B30EAA0CB041 /* MWZComponentBorderedTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D9572CCB5B9CA0E602B5FD1F9A2ECE43 /* MWZComponentSearchBarDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F90518DBDFA8B113DA0313D31F947C4 /* MWZComponentSearchBarDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DAF6D3E1524E51F7AF70F6DF2495798C /* MWZComponentUniversesButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE9ECA9E4B79451DD931B1D6A28B764 /* MWZComponentUniversesButton.m */; };
+		DF5E5C5824333853A1E7C3E385136A71 /* MapwizeUI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDB6FA7D9389BDE1C0905B83DD74E8B /* MapwizeUI-dummy.m */; };
+		E6F808A1A64D407F1B13643872237E54 /* aesopt.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D61C60B1C96C98C072161A969AB9A70 /* aesopt.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E988A48C5A013B20A81B9C761C5FC779 /* crypt.h in Headers */ = {isa = PBXBuildFile; fileRef = FD72DBA347C4C773873B444922E79011 /* crypt.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E99763361B4E65DBB4CEFBC581002937 /* MWZMapwizeView.m in Sources */ = {isa = PBXBuildFile; fileRef = AC809F5703EBFB2E769EF47CD4266B4F /* MWZMapwizeView.m */; };
+		EB0DD8CEA1A69867A30267439C970440 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FB57E4153F6A4330A9087EC337CDEF /* Result.swift */; };
+		EB5A06D669385D7DD3F2FEC9A9922365 /* MWZIndoorLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = D556AEAB8AAB29D7F79887B10421CACE /* MWZIndoorLocation.m */; };
+		EF0B278986BF12992D7AD40E2881771F /* MWZComponentFloorView.m in Sources */ = {isa = PBXBuildFile; fileRef = FD1A3E38C7DA8657F3A07C5D2096C4FF /* MWZComponentFloorView.m */; };
+		F1B14B28BA6F0271FA77396D2EAF0902 /* SSZipArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = 50BBB65B65D0619ABCBBFC5A5DE26CCC /* SSZipArchive.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F27098BC58CCB14C51D70AED922DE3B6 /* MWZMapwizeView.h in Headers */ = {isa = PBXBuildFile; fileRef = E8C86F543C1952CB4C301B40ABCE1422 /* MWZMapwizeView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F34B3B7D2880EA5AF376BF5BAB6FB42C /* MWZComponentFollowUserButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1642D92C586DAE363E4E0B4D2C4456E8 /* MWZComponentFollowUserButton.m */; };
+		F54748FC5E43D1FC6EC20910B81917F1 /* brg_endian.h in Headers */ = {isa = PBXBuildFile; fileRef = A67EA45BEE6DE7B68053EC185FC71E4D /* brg_endian.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F56B0A1DB4FCDCC82B7A3E7B507AEB0D /* crypt.c in Sources */ = {isa = PBXBuildFile; fileRef = 303CA55F9A75CA86ACF93AE48DD01740 /* crypt.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		F9CA5A3E9EBDF3B8DA907A687C708303 /* minishared.h in Headers */ = {isa = PBXBuildFile; fileRef = FF1F54A51641B7CC1EE0783D6F6EC3D4 /* minishared.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FDA3CA13520F37490F1BC6A5B2640FF6 /* sha1.c in Sources */ = {isa = PBXBuildFile; fileRef = 906C8E1B0B82D4C4276724854455775A /* sha1.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		FFF6C4331CE51BD7D89C9C1DA083DC97 /* MWZComponentSubtitleCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 4929FA85ED4769B66EB35E345E5A2587 /* MWZComponentSubtitleCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		4E9934C3D4890571CBE99630F4DB3B47 /* PBXContainerItemProxy */ = {
+		18972C1839A739151026E6BD70771845 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 49EC2F2E4B057B8A5A2956F5263AE094;
+			remoteInfo = MapwizeForMapbox;
+		};
+		28F65EC9B002202BDF7DCF22EF8A806F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 49EC2F2E4B057B8A5A2956F5263AE094;
+			remoteInfo = MapwizeForMapbox;
+		};
+		2D4FD307170C4226C875A9E025508954 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF360B618D54578802B211E302DC7213;
+			remoteInfo = IndoorLocation;
+		};
+		4E2B95B209C1772166E43D552289E0B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2AEF7C96AD3290F1938695E88317888D;
+			remoteInfo = SSZipArchive;
+		};
+		74C563DA796F6D502AA3F8850EA1BF24 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF360B618D54578802B211E302DC7213;
+			remoteInfo = IndoorLocation;
+		};
+		92B51B9093B67EB6B41E5CE651D67F62 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 33FD49C316A380C97D6435712607313B;
+			remoteInfo = "Mapbox-iOS-SDK";
+		};
+		AAD6251D6DF2D6F66E13773AC33F6F60 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 3383968E74B5371B20BB519B170DC7FD;
 			remoteInfo = Alamofire;
 		};
+		C7D5EABA8AEDF89A45F6D0C0B69533B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 33FD49C316A380C97D6435712607313B;
+			remoteInfo = "Mapbox-iOS-SDK";
+		};
+		DDA32B3AC527E6C3BACAB49C3F1B433A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2AEF7C96AD3290F1938695E88317888D;
+			remoteInfo = SSZipArchive;
+		};
+		F5D27974A13E945E291FE76C966CE867 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D90AA3703DBDDA662DD88D45780ABB38;
+			remoteInfo = MapwizeUI;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0D01BA8472F25D39F718F71557EDC8DD /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
-		15A825CFEBAE606149BF0047C9F5B209 /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
-		1C15C076B531E2E7744C358418A0C0B5 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
-		32DB5272AD01ECD0B09A86818A7754C4 /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
-		33115EC2A5164913C68F8BD170389EEE /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
-		3D7E25E371731FAE44F46A9F392CB5D5 /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
+		012DC6F530BE46D06988C460573ACFE5 /* minishared.c */ = {isa = PBXFileReference; includeInIndex = 1; name = minishared.c; path = SSZipArchive/minizip/minishared.c; sourceTree = "<group>"; };
+		0360EB9D101D0E3B6FAD47F78CA4666C /* MWZComponentLanguagesButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MWZComponentLanguagesButton.m; path = MapwizeUI/LanguageButton/MWZComponentLanguagesButton.m; sourceTree = "<group>"; };
+		05660E3DDDFF92CBDB88F68F9265E364 /* MWZStyle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWZStyle.h; path = MapwizeForMapbox.framework/Headers/MWZStyle.h; sourceTree = "<group>"; };
+		06BDF39F7865FB0D9CD0C1FFAA8F31CA /* MWZComponentBottomInfoViewDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWZComponentBottomInfoViewDelegate.h; path = MapwizeUI/BottomInfoView/MWZComponentBottomInfoViewDelegate.h; sourceTree = "<group>"; };
+		0928B335E75FCE836FF9E5A822637AC1 /* SSZipArchive-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SSZipArchive-prefix.pch"; sourceTree = "<group>"; };
+		096FE8577A16B99AE77A0E7008233E51 /* unzip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = unzip.h; path = SSZipArchive/minizip/unzip.h; sourceTree = "<group>"; };
+		0B39318F8DE6AB5A6F859B2456E24649 /* MWZPlaceList.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWZPlaceList.h; path = MapwizeForMapbox.framework/Headers/MWZPlaceList.h; sourceTree = "<group>"; };
+		0B5E6EEACA02E5C433EB44D1B71BE3E8 /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
+		0DD4728DDA40BDDF87D138B13AE535B1 /* MapwizeUI-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MapwizeUI-Info.plist"; sourceTree = "<group>"; };
+		0ED27B469B984CDFC6E78F7B774BCB7C /* MapwizeUI.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MapwizeUI.xcconfig; sourceTree = "<group>"; };
+		0EE687F32409CD511122B2553A7390D0 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Alamofire.modulemap; sourceTree = "<group>"; };
+		1018633D45B94870EC6D4E9DE7396650 /* MapwizeUI-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MapwizeUI-umbrella.h"; sourceTree = "<group>"; };
+		11429941570553AC5BAAF70098F3A451 /* MWZComponentLoadingBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MWZComponentLoadingBar.m; path = MapwizeUI/Commons/MWZComponentLoadingBar.m; sourceTree = "<group>"; };
+		11EA557A195B578EAA0B58ACA3023742 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
+		12D4E28DF491FA4EDA000455AA608E04 /* SSZipArchive-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SSZipArchive-umbrella.h"; sourceTree = "<group>"; };
+		131EC5E66FAB577CBEE46ADB0A01F23F /* IndoorLocation-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IndoorLocation-prefix.pch"; sourceTree = "<group>"; };
+		1642D92C586DAE363E4E0B4D2C4456E8 /* MWZComponentFollowUserButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MWZComponentFollowUserButton.m; path = MapwizeUI/FollowUserButton/MWZComponentFollowUserButton.m; sourceTree = "<group>"; };
+		1746CAFD4D639F7002563721D2E47DD7 /* MWZComponentQrCodeButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MWZComponentQrCodeButton.m; path = MapwizeUI/QrCodeButton/MWZComponentQrCodeButton.m; sourceTree = "<group>"; };
+		1967AC0498B61D6E8603BEDE82605791 /* MWZMapwizeViewDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWZMapwizeViewDelegate.h; path = MapwizeUI/MapwizeView/MWZMapwizeViewDelegate.h; sourceTree = "<group>"; };
+		1AC2BF44B4F1D3EEFE23E1F09B1FA661 /* MWZOfflineManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWZOfflineManager.h; path = MapwizeForMapbox.framework/Headers/MWZOfflineManager.h; sourceTree = "<group>"; };
+		1B14602E08441FC6B3F5B30EAA0CB041 /* MWZComponentBorderedTextField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWZComponentBorderedTextField.h; path = MapwizeUI/Commons/MWZComponentBorderedTextField.h; sourceTree = "<group>"; };
+		1B4CF8E2C89F924D1A2B4F62C3E967B3 /* MWZParsedUrlObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWZParsedUrlObject.h; path = MapwizeForMapbox.framework/Headers/MWZParsedUrlObject.h; sourceTree = "<group>"; };
+		1BC516404DDED2DCE75DC4E13B861D39 /* MWZComponentCompassDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWZComponentCompassDelegate.h; path = MapwizeUI/CompassView/MWZComponentCompassDelegate.h; sourceTree = "<group>"; };
+		1D0BD92C08BBAE75B4D305969A5684FD /* MWZDirectionWrapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWZDirectionWrapper.h; path = MapwizeForMapbox.framework/Headers/MWZDirectionWrapper.h; sourceTree = "<group>"; };
+		1D61C60B1C96C98C072161A969AB9A70 /* aesopt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = aesopt.h; path = SSZipArchive/minizip/aes/aesopt.h; sourceTree = "<group>"; };
+		1EBE9702C61DEFCF90F11006498B4634 /* MWZClickEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWZClickEvent.h; path = MapwizeForMapbox.framework/Headers/MWZClickEvent.h; sourceTree = "<group>"; };
+		1F598EB879B83487A83A9B84222F3094 /* unzip.c */ = {isa = PBXFileReference; includeInIndex = 1; name = unzip.c; path = SSZipArchive/minizip/unzip.c; sourceTree = "<group>"; };
+		22AFA50A971E9D6D83A0DBDC714B4C99 /* SSZipArchive.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SSZipArchive.m; path = SSZipArchive/SSZipArchive.m; sourceTree = "<group>"; };
+		23306284C849BDA38A38888669CC7A1F /* MWZMapwizeAnnotation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWZMapwizeAnnotation.h; path = MapwizeForMapbox.framework/Headers/MWZMapwizeAnnotation.h; sourceTree = "<group>"; };
+		27C087EF26714960426171345CDAEFB7 /* pwd2key.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pwd2key.h; path = SSZipArchive/minizip/aes/pwd2key.h; sourceTree = "<group>"; };
+		2A1C2E22D75AC65315708E41C641A674 /* MWZComponentIconTextButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MWZComponentIconTextButton.m; path = MapwizeUI/Commons/MWZComponentIconTextButton.m; sourceTree = "<group>"; };
+		2BA746BB02E0560A592FE555889B28B6 /* MWZDirectionWrapperAndDistance.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWZDirectionWrapperAndDistance.h; path = MapwizeForMapbox.framework/Headers/MWZDirectionWrapperAndDistance.h; sourceTree = "<group>"; };
+		301CAA6D282A8A1EDCDECC9071A54741 /* SSZipArchive-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SSZipArchive-Info.plist"; sourceTree = "<group>"; };
+		303CA55F9A75CA86ACF93AE48DD01740 /* crypt.c */ = {isa = PBXFileReference; includeInIndex = 1; name = crypt.c; path = SSZipArchive/minizip/crypt.c; sourceTree = "<group>"; };
+		3262C46B98E23BF08D5E2989AA11F57D /* IndoorLocation.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = IndoorLocation.modulemap; sourceTree = "<group>"; };
+		336D28A25E4A3D52EA6D3A646B649125 /* MWZPlace.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWZPlace.h; path = MapwizeForMapbox.framework/Headers/MWZPlace.h; sourceTree = "<group>"; };
+		35271E130C2BDDE5AFD6DEA727537294 /* MWZComponentFloorController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWZComponentFloorController.h; path = MapwizeUI/FloorController/MWZComponentFloorController.h; sourceTree = "<group>"; };
+		358E75D4D76B134E04E229C4C315D19D /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
+		35BE82D36AA654510F090844BA7AFC3A /* MWZApi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWZApi.h; path = MapwizeForMapbox.framework/Headers/MWZApi.h; sourceTree = "<group>"; };
+		37A86708A3BB7E399D079CC36176CB83 /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
+		38FB57E4153F6A4330A9087EC337CDEF /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
+		3B66AC6ABCAD23929829B5410C3C8D01 /* IndoorLocation-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IndoorLocation-dummy.m"; sourceTree = "<group>"; };
+		3B8363B66C6EC433FF121743C20242B4 /* SSZipArchive-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SSZipArchive-dummy.m"; sourceTree = "<group>"; };
+		3D42BBDE0F5BE1320A7370F1E72A8824 /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
+		3DC3A2CA889596144663A9BA6BE01391 /* MWZFollowUserButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWZFollowUserButton.h; path = MapwizeForMapbox.framework/Headers/MWZFollowUserButton.h; sourceTree = "<group>"; };
+		3EC06D3827430769CD3F2206223E4C71 /* MWZClickEventTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWZClickEventTypes.h; path = MapwizeForMapbox.framework/Headers/MWZClickEventTypes.h; sourceTree = "<group>"; };
 		3ECA5550B7A50B5F44B89D2D15C77A7A /* Pods-YOYOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YOYOS-Info.plist"; sourceTree = "<group>"; };
-		4F652B81B77453471CD91E7CE335DD64 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Alamofire.modulemap; sourceTree = "<group>"; };
+		3EF03F60E96B48CAAEA782B432291A30 /* MWZComponentResultList.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWZComponentResultList.h; path = MapwizeUI/ResultList/MWZComponentResultList.h; sourceTree = "<group>"; };
+		3EFDCB060184ADACB27B7A09220E8F3F /* MWZOptions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWZOptions.h; path = MapwizeForMapbox.framework/Headers/MWZOptions.h; sourceTree = "<group>"; };
+		3FC07D9A6B876E6CBCD375B1CA8CE7D6 /* MWZSearchData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWZSearchData.h; path = MapwizeUI/Utils/MWZSearchData.h; sourceTree = "<group>"; };
+		41632AD657B62EA3982B6AC5ECDC537D /* ioapi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ioapi.h; path = SSZipArchive/minizip/ioapi.h; sourceTree = "<group>"; };
+		437C16D132702DF03F40AA0583E66258 /* hmac.c */ = {isa = PBXFileReference; includeInIndex = 1; name = hmac.c; path = SSZipArchive/minizip/aes/hmac.c; sourceTree = "<group>"; };
+		43F8BD74EE56F774CED718C3F3059DBB /* ioapi_mem.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ioapi_mem.c; path = SSZipArchive/minizip/ioapi_mem.c; sourceTree = "<group>"; };
+		45D080947C88AF01D927260DB3143E4A /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
+		47434C4BC6FA0335F9EAF841D380F2EB /* MWZComponentResultList.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MWZComponentResultList.m; path = MapwizeUI/ResultList/MWZComponentResultList.m; sourceTree = "<group>"; };
+		474AA80F99C3E62FBBC77E3AD55F54C3 /* MWZComponentCompass.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWZComponentCompass.h; path = MapwizeUI/CompassView/MWZComponentCompass.h; sourceTree = "<group>"; };
+		4929FA85ED4769B66EB35E345E5A2587 /* MWZComponentSubtitleCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWZComponentSubtitleCell.h; path = MapwizeUI/ResultList/MWZComponentSubtitleCell.h; sourceTree = "<group>"; };
+		4A404795D8D21BC9EEACF9C9996AEC2F /* MWZComponentSearchBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWZComponentSearchBar.h; path = MapwizeUI/SearchModule/MWZComponentSearchBar.h; sourceTree = "<group>"; };
+		4AEDBC1A7450C73C48FD740759005613 /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Mapbox.framework; path = dynamic/Mapbox.framework; sourceTree = "<group>"; };
+		4B124DD5BA24DC063D394AE855AE18A0 /* mwzimages.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = mwzimages.xcassets; path = MapwizeUI/Resources/mwzimages.xcassets; sourceTree = "<group>"; };
+		4BD28478B58437F5704522F5D80BC116 /* ioapi_buf.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ioapi_buf.c; path = SSZipArchive/minizip/ioapi_buf.c; sourceTree = "<group>"; };
+		4C17CA0CB2143BD4B330473CE5DA2F60 /* Pods_YOYOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_YOYOS.framework; path = "Pods-YOYOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C32F45BFE02B2E314EC56D33B7DE237 /* MWZComponentDirectionInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWZComponentDirectionInfo.h; path = MapwizeUI/DirectionModule/MWZComponentDirectionInfo.h; sourceTree = "<group>"; };
+		4E813CA30902014FCC346000C644691E /* ioapi_buf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ioapi_buf.h; path = SSZipArchive/minizip/ioapi_buf.h; sourceTree = "<group>"; };
+		4EBF1E7D6715BAC85B622A18F4171D9F /* MWZComponentTitleWithoutFloorCellTableViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MWZComponentTitleWithoutFloorCellTableViewCell.m; path = MapwizeUI/ResultList/MWZComponentTitleWithoutFloorCellTableViewCell.m; sourceTree = "<group>"; };
+		4F90518DBDFA8B113DA0313D31F947C4 /* MWZComponentSearchBarDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWZComponentSearchBarDelegate.h; path = MapwizeUI/SearchModule/MWZComponentSearchBarDelegate.h; sourceTree = "<group>"; };
+		50BBB65B65D0619ABCBBFC5A5DE26CCC /* SSZipArchive.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSZipArchive.h; path = SSZipArchive/SSZipArchive.h; sourceTree = "<group>"; };
+		50D02D39E48C5309D700095173FE1A01 /* zip.c */ = {isa = PBXFileReference; includeInIndex = 1; name = zip.c; path = SSZipArchive/minizip/zip.c; sourceTree = "<group>"; };
 		5383E6085DAC8D2590B1E9F84ADF9C79 /* Pods-YOYOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-YOYOS.modulemap"; sourceTree = "<group>"; };
-		6D30DC96A019B5A49BFDEAF2DEF90276 /* Pods_YOYOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_YOYOS.framework; path = "Pods-YOYOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BD7FAC0D64590A19DD6EF4CC5ABF73F /* prng.c */ = {isa = PBXFileReference; includeInIndex = 1; name = prng.c; path = SSZipArchive/minizip/aes/prng.c; sourceTree = "<group>"; };
+		5ED658E37CE0FD7E391307F87A9D2800 /* MWZComponentFloorView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWZComponentFloorView.h; path = MapwizeUI/FloorController/MWZComponentFloorView.h; sourceTree = "<group>"; };
+		5EEA517414EB5A1F4F2582ECC8344178 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
+		5FE9ECA9E4B79451DD931B1D6A28B764 /* MWZComponentUniversesButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MWZComponentUniversesButton.m; path = MapwizeUI/UniverseButton/MWZComponentUniversesButton.m; sourceTree = "<group>"; };
+		619C0BC7555A0A829D451BC2EFA64CBE /* IndoorLocation-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IndoorLocation-umbrella.h"; sourceTree = "<group>"; };
+		62F4F18F0A2FEF722059EED094338E9F /* aes_ni.c */ = {isa = PBXFileReference; includeInIndex = 1; name = aes_ni.c; path = SSZipArchive/minizip/aes/aes_ni.c; sourceTree = "<group>"; };
+		648349CC6873ED119F18D0C4896C400D /* fileenc.c */ = {isa = PBXFileReference; includeInIndex = 1; name = fileenc.c; path = SSZipArchive/minizip/aes/fileenc.c; sourceTree = "<group>"; };
+		65A45605474B882BC2840DFB787284B5 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
+		675C1FBCEC14F98EC35BE2A38EE9A731 /* IndoorLocation-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "IndoorLocation-Info.plist"; sourceTree = "<group>"; };
+		687C16989879E8EBB929BDCFC23B9A21 /* MWZRoute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWZRoute.h; path = MapwizeForMapbox.framework/Headers/MWZRoute.h; sourceTree = "<group>"; };
+		687F6FB615C36CC40B0C2FC8A4099BF1 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		69EF2D2FA1B047F1D6C2B78FACAF897C /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
+		6A40EF1558F323685929980CCDA321EF /* aes_ni.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = aes_ni.h; path = SSZipArchive/minizip/aes/aes_ni.h; sourceTree = "<group>"; };
+		6A4FE140062739181F8B1C6E582F4EFD /* MWZMapwizeViewUISettings.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWZMapwizeViewUISettings.h; path = MapwizeUI/MapwizeView/MWZMapwizeViewUISettings.h; sourceTree = "<group>"; };
+		6B1134C31D698AF3DAA4E896E90E4C9E /* MWZFollowUserModeEnum.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWZFollowUserModeEnum.h; path = MapwizeForMapbox.framework/Headers/MWZFollowUserModeEnum.h; sourceTree = "<group>"; };
+		6C9C04A6ECA6154CE2F6A2B2CDBAD610 /* MWZComponentQrCodeButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWZComponentQrCodeButton.h; path = MapwizeUI/QrCodeButton/MWZComponentQrCodeButton.h; sourceTree = "<group>"; };
+		6E65926AD7CAACD657BE81EF3D70D880 /* aestab.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = aestab.h; path = SSZipArchive/minizip/aes/aestab.h; sourceTree = "<group>"; };
 		6F2B330A485FE03A8E0AE7ED98B320ED /* Pods-YOYOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-YOYOS-umbrella.h"; sourceTree = "<group>"; };
-		7545CF55BE345EA7C318A64E7BFB1C70 /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
-		75C759635F88377BD7E2DEDE04C23C62 /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
-		7B03859BDC36782899379E222720A297 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
-		82DF017C51DF41C18AC359BBE49CFFA9 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8D5A0E300C04A6DF88D620788FE38780 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
+		6F2C5CF45C05BC6FF8807E177537F8EC /* MWZComponentGroupedResultList.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MWZComponentGroupedResultList.m; path = MapwizeUI/ResultList/MWZComponentGroupedResultList.m; sourceTree = "<group>"; };
+		6F7AEADDE89F1EE6480AAB2395A99F61 /* MWZComponentFollowUserButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWZComponentFollowUserButton.h; path = MapwizeUI/FollowUserButton/MWZComponentFollowUserButton.h; sourceTree = "<group>"; };
+		6F8B1659F7CA40B61A0CF176D198D95D /* ILIndoorLocationProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ILIndoorLocationProvider.h; path = "indoor-location-ios/ILIndoorLocation/ILIndoorLocationProvider.h"; sourceTree = "<group>"; };
+		6FB43DD2F26A2498FDCB7D10E4F1A6E6 /* Alamofire-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Alamofire-Info.plist"; sourceTree = "<group>"; };
+		7075C6E48327708B0F4874940ACF5482 /* MWZTypeDefinition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWZTypeDefinition.h; path = MapwizeForMapbox.framework/Headers/MWZTypeDefinition.h; sourceTree = "<group>"; };
+		7158D455D81379F06617AC37FC5148AC /* MWZComponentCompass.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MWZComponentCompass.m; path = MapwizeUI/CompassView/MWZComponentCompass.m; sourceTree = "<group>"; };
+		71F45E69CF2457A0DA4C85FB3D2879EB /* MWZVenue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWZVenue.h; path = MapwizeForMapbox.framework/Headers/MWZVenue.h; sourceTree = "<group>"; };
+		75362CD0F13BCEE64A12A8768AAB4055 /* MapwizeUI.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MapwizeUI.modulemap; sourceTree = "<group>"; };
+		76C4E1F5EF286DF066FD2520A85BA0DB /* Mapbox-iOS-SDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Mapbox-iOS-SDK.xcconfig"; sourceTree = "<group>"; };
+		7878DDAAF62C5E4D54A95109F8054A24 /* MWZComponentBorderedTextField.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MWZComponentBorderedTextField.m; path = MapwizeUI/Commons/MWZComponentBorderedTextField.m; sourceTree = "<group>"; };
+		78D1447667EA0DD84BDB4643204E81D1 /* MWZIndoorLocation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWZIndoorLocation.h; path = MapwizeUI/Utils/MWZIndoorLocation.h; sourceTree = "<group>"; };
+		7C021BA467E201794E905F660885F8B0 /* MapwizeUI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MapwizeUI.h; path = MapwizeUI/MapwizeUI.h; sourceTree = "<group>"; };
+		7C74C4FF72EF40614C483243B7F4338C /* MWZTranslation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWZTranslation.h; path = MapwizeForMapbox.framework/Headers/MWZTranslation.h; sourceTree = "<group>"; };
+		7E7D6AFEC006402412F58536FACFD6F3 /* ioapi_mem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ioapi_mem.h; path = SSZipArchive/minizip/ioapi_mem.h; sourceTree = "<group>"; };
+		7EC84D0BE1BEDC8863EA46FF88AD697A /* MWZComponentFloorController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MWZComponentFloorController.m; path = MapwizeUI/FloorController/MWZComponentFloorController.m; sourceTree = "<group>"; };
+		7F5B78493F1BEB507CCB373DD581C166 /* MWZComponentColors.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MWZComponentColors.m; path = MapwizeUI/Utils/MWZComponentColors.m; sourceTree = "<group>"; };
+		81752CB0464DC7EEEA7D01F73D37866B /* SSZipArchive.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SSZipArchive.modulemap; sourceTree = "<group>"; };
+		84FB3C27B6563AB00EB8C55FF35730AE /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
+		85FB65DAB1B2091C6E45E7DCEB3F441A /* MWZDirection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWZDirection.h; path = MapwizeForMapbox.framework/Headers/MWZDirection.h; sourceTree = "<group>"; };
+		865882D724CCCC2A36B122EB3A4C3171 /* MWZComponentUniversesButtonDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWZComponentUniversesButtonDelegate.h; path = MapwizeUI/UniverseButton/MWZComponentUniversesButtonDelegate.h; sourceTree = "<group>"; };
+		86A3B10CFD1B349BF411755C46F65DD5 /* MWZUserInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWZUserInfo.h; path = MapwizeForMapbox.framework/Headers/MWZUserInfo.h; sourceTree = "<group>"; };
+		881768668C80ECEB407738A8304268E2 /* MWZComponentBottomInfoView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWZComponentBottomInfoView.h; path = MapwizeUI/BottomInfoView/MWZComponentBottomInfoView.h; sourceTree = "<group>"; };
+		889CAD9C9DA2ECB1BF114EBFD2B05ED7 /* IndoorLocation.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IndoorLocation.xcconfig; sourceTree = "<group>"; };
+		88AAF9E7552FC54062A4D73F92B73B23 /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
+		89F07AE8EE2E9C24E464BCC5B5754E13 /* MapwizeForMapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MapwizeForMapbox.framework; sourceTree = "<group>"; };
+		8A715A430D2B8B8F6985B6418D37A0D4 /* MWZDirectionPoint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWZDirectionPoint.h; path = MapwizeForMapbox.framework/Headers/MWZDirectionPoint.h; sourceTree = "<group>"; };
+		8AF4535DB985DD763D47357B9B250CB4 /* MWZUniverse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWZUniverse.h; path = MapwizeForMapbox.framework/Headers/MWZUniverse.h; sourceTree = "<group>"; };
+		8BB10487C5077168003BF863D3921CC4 /* MWZLatLng.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWZLatLng.h; path = MapwizeForMapbox.framework/Headers/MWZLatLng.h; sourceTree = "<group>"; };
+		8F743720023BA46D62178BA4F31BBDEF /* MWZComponentResultListDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWZComponentResultListDelegate.h; path = MapwizeUI/ResultList/MWZComponentResultListDelegate.h; sourceTree = "<group>"; };
+		8FA12CA39F6F5703773A76CC889CB227 /* IndoorLocation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = IndoorLocation.framework; path = IndoorLocation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		906C8E1B0B82D4C4276724854455775A /* sha1.c */ = {isa = PBXFileReference; includeInIndex = 1; name = sha1.c; path = SSZipArchive/minizip/aes/sha1.c; sourceTree = "<group>"; };
+		90A2673341B0C3E9A086035A613402D2 /* MWZComponentCurrentLocationView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MWZComponentCurrentLocationView.m; path = MapwizeUI/Commons/MWZComponentCurrentLocationView.m; sourceTree = "<group>"; };
+		917B52C8046C1A65D64916BE1349B213 /* MWZComponentTitleCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MWZComponentTitleCell.m; path = MapwizeUI/ResultList/MWZComponentTitleCell.m; sourceTree = "<group>"; };
+		9478F3825387470391C59AC5DFDCED5E /* ZipArchive.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZipArchive.h; path = SSZipArchive/ZipArchive.h; sourceTree = "<group>"; };
+		9501D1F128E67A15F8FCC8DEC8EED6D4 /* MWZSearchData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MWZSearchData.m; path = MapwizeUI/Utils/MWZSearchData.m; sourceTree = "<group>"; };
 		951ACE54FF8E5001B2D8C896B36D7420 /* Pods-YOYOS-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YOYOS-acknowledgements.plist"; sourceTree = "<group>"; };
-		96AC98D0CCFA778066DE3211DF4A612B /* Alamofire-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Alamofire-Info.plist"; sourceTree = "<group>"; };
-		9D59E1AD3CC394A93392FF3DC8CF2961 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
+		952C3C4F43714F06EDE4604955035E83 /* MWZComponentSearchBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MWZComponentSearchBar.m; path = MapwizeUI/SearchModule/MWZComponentSearchBar.m; sourceTree = "<group>"; };
+		9681BF23A1743FD8AF942304A7F1EB67 /* MWZComponentTitleCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWZComponentTitleCell.h; path = MapwizeUI/ResultList/MWZComponentTitleCell.h; sourceTree = "<group>"; };
+		96A01EA614BFA904961A09F5646FDD78 /* ILIndoorLocationProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ILIndoorLocationProvider.m; path = "indoor-location-ios/ILIndoorLocation/ILIndoorLocationProvider.m"; sourceTree = "<group>"; };
+		971B2B928534FF9E08E6D8DA461E262D /* MWZComponentDirectionBarDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWZComponentDirectionBarDelegate.h; path = MapwizeUI/DirectionModule/MWZComponentDirectionBarDelegate.h; sourceTree = "<group>"; };
+		977E40530391DB663595FD1001BFDBB4 /* MWZComponentIconTextButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWZComponentIconTextButton.h; path = MapwizeUI/Commons/MWZComponentIconTextButton.h; sourceTree = "<group>"; };
+		986F696EF0D5C7538FCCC634A9877002 /* MWZComponentGroupedResultList.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWZComponentGroupedResultList.h; path = MapwizeUI/ResultList/MWZComponentGroupedResultList.h; sourceTree = "<group>"; };
+		98CAF3654DB2D06DD5507F56EFE9108F /* MWZLatLngFloorInVenue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWZLatLngFloorInVenue.h; path = MapwizeForMapbox.framework/Headers/MWZLatLngFloorInVenue.h; sourceTree = "<group>"; };
+		99735ECCA5B1D385F7851ED71F9F4F5F /* MapwizeForMapbox.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MapwizeForMapbox.xcconfig; sourceTree = "<group>"; };
+		9B63C848288CA4D21A4828C3E15BC260 /* ioapi.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ioapi.c; path = SSZipArchive/minizip/ioapi.c; sourceTree = "<group>"; };
+		9C28500DE3CC003191A2B753ED291B27 /* ILIndoorLocation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ILIndoorLocation.h; path = "indoor-location-ios/ILIndoorLocation/ILIndoorLocation.h"; sourceTree = "<group>"; };
+		9C40F937CAA2C57FF18C360166AA7DB1 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
+		9D4A43E44C78A7ED3C2815A61727A75B /* MWZMapwizeViewUISettings.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MWZMapwizeViewUISettings.m; path = MapwizeUI/MapwizeView/MWZMapwizeViewUISettings.m; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A0F6B1DBF2B95867B02CA909027E6CA1 /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
-		AFF7F7716086D54E6308EE52C8227B87 /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
-		B06639F7A76DB8A9D0D0E41CDD7A6684 /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
+		9E0F7AD807FCEAA8A05317981C7B3130 /* MapwizeUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MapwizeUI.framework; path = MapwizeUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A024354F3D2B99E2D70B198EADCB0AE7 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
+		A226E90F9D6FEC0A09AD60E9BB374AF0 /* MWZSearchParams.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWZSearchParams.h; path = MapwizeForMapbox.framework/Headers/MWZSearchParams.h; sourceTree = "<group>"; };
+		A3F3E4216F40B7A9EC7DEF6F50A8FD07 /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
+		A67EA45BEE6DE7B68053EC185FC71E4D /* brg_endian.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = brg_endian.h; path = SSZipArchive/minizip/aes/brg_endian.h; sourceTree = "<group>"; };
+		A949F741333145F574B56A9BE62F92B1 /* MWZComponentColors.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWZComponentColors.h; path = MapwizeUI/Utils/MWZComponentColors.h; sourceTree = "<group>"; };
+		AC809F5703EBFB2E769EF47CD4266B4F /* MWZMapwizeView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MWZMapwizeView.m; path = MapwizeUI/MapwizeView/MWZMapwizeView.m; sourceTree = "<group>"; };
+		ACE1B4FF0ACB8473BB7DEE17B557DADC /* SSZipArchive.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SSZipArchive.xcconfig; sourceTree = "<group>"; };
+		AE4B384D31CB83236C1C0A5594010BEF /* brg_types.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = brg_types.h; path = SSZipArchive/minizip/aes/brg_types.h; sourceTree = "<group>"; };
+		B0751B383A76E44FC3C0819069F7C956 /* MWZAccountManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWZAccountManager.h; path = MapwizeForMapbox.framework/Headers/MWZAccountManager.h; sourceTree = "<group>"; };
+		B62B75BB03983B5380587E4EDD33B5B7 /* MWZComponentCurrentLocationView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWZComponentCurrentLocationView.h; path = MapwizeUI/Commons/MWZComponentCurrentLocationView.h; sourceTree = "<group>"; };
 		B6D80ECA7031A4BE8008F82AEE18B413 /* Pods-YOYOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YOYOS.release.xcconfig"; sourceTree = "<group>"; };
-		BE16989701DCA0B781F86A093D7C5E22 /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
-		BFCE3D7EDCA41F256D471B40BBFD3FCE /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
-		C4453BE339B79900FDC53E34FE5589CB /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
+		BA174EF872EA790B4BD8926DC2BB418F /* MWZApiResponseParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWZApiResponseParser.h; path = MapwizeForMapbox.framework/Headers/MWZApiResponseParser.h; sourceTree = "<group>"; };
+		BC9DDE0D091856589D44ADDBEED4EB16 /* zip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = zip.h; path = SSZipArchive/minizip/zip.h; sourceTree = "<group>"; };
+		BDD6DBAFBB76DF008B9822AC239966A4 /* MWZComponentGroupedResultListDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWZComponentGroupedResultListDelegate.h; path = MapwizeUI/ResultList/MWZComponentGroupedResultListDelegate.h; sourceTree = "<group>"; };
+		C004A9D4AB6EE5908B8E055FE9107FC3 /* aeskey.c */ = {isa = PBXFileReference; includeInIndex = 1; name = aeskey.c; path = SSZipArchive/minizip/aes/aeskey.c; sourceTree = "<group>"; };
+		C34AD589FF88FE73E4ED0595A04B1C26 /* MapwizePlugin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MapwizePlugin.h; path = MapwizeForMapbox.framework/Headers/MapwizePlugin.h; sourceTree = "<group>"; };
+		C54B2722779CD858B5D09462F540B991 /* MapwizeUI-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MapwizeUI-prefix.pch"; sourceTree = "<group>"; };
 		C73A929E324D92FD43E3A2F2C64E4FAE /* Pods-YOYOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-YOYOS-dummy.m"; sourceTree = "<group>"; };
+		C79855E27675A68100F4E5BEAE1B5A26 /* MWZLatLngFloor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWZLatLngFloor.h; path = MapwizeForMapbox.framework/Headers/MWZLatLngFloor.h; sourceTree = "<group>"; };
+		CA6EA043428D44F5C181030A2070C0E0 /* MWZComponentLanguagesButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWZComponentLanguagesButton.h; path = MapwizeUI/LanguageButton/MWZComponentLanguagesButton.h; sourceTree = "<group>"; };
+		CB2DD3F3321C851B5BC4F2C7AF366C5B /* MWZComponentLoadingBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWZComponentLoadingBar.h; path = MapwizeUI/Commons/MWZComponentLoadingBar.h; sourceTree = "<group>"; };
 		CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		CCC6858C85690F7AFEA7F6542EE9A69A /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
-		DD807F155301ECA538A2C1C296E1186D /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
+		CB7BBB405CAB36CEC8B1115566B188B6 /* MWZUISettings.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWZUISettings.h; path = MapwizeForMapbox.framework/Headers/MWZUISettings.h; sourceTree = "<group>"; };
+		CB9DDEB0A88C1546F99289F6C11091C1 /* MWZComponentLanguagesButtonDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWZComponentLanguagesButtonDelegate.h; path = MapwizeUI/LanguageButton/MWZComponentLanguagesButtonDelegate.h; sourceTree = "<group>"; };
+		CBB91380C3A9737380B63FE072142155 /* en.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = en.lproj; path = MapwizeUI/Resources/en.lproj; sourceTree = "<group>"; };
+		CC0A703912C420FC9EDBB30D567404C3 /* MWZUIOptions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MWZUIOptions.m; path = MapwizeUI/Utils/MWZUIOptions.m; sourceTree = "<group>"; };
+		CF240AF19C50E7AE6D0ADA4DA10D0206 /* MWZComponentDirectionBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MWZComponentDirectionBar.m; path = MapwizeUI/DirectionModule/MWZComponentDirectionBar.m; sourceTree = "<group>"; };
+		D1E11D1D1C37EADFE8A1FE84BF430E2E /* IndoorLocation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IndoorLocation.h; path = "indoor-location-ios/ILIndoorLocation/IndoorLocation.h"; sourceTree = "<group>"; };
+		D1FEE037F6A31B7DACC8CF8A8861D7A7 /* MWZComponentTitleWithoutFloorCellTableViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWZComponentTitleWithoutFloorCellTableViewCell.h; path = MapwizeUI/ResultList/MWZComponentTitleWithoutFloorCellTableViewCell.h; sourceTree = "<group>"; };
+		D27355383B9E2DD2FD0FB24558405853 /* MWZComponentQrCodeButtonDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWZComponentQrCodeButtonDelegate.h; path = MapwizeUI/QrCodeButton/MWZComponentQrCodeButtonDelegate.h; sourceTree = "<group>"; };
+		D496AE8D9999120521941F6298EB8F2F /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
+		D556AEAB8AAB29D7F79887B10421CACE /* MWZIndoorLocation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MWZIndoorLocation.m; path = MapwizeUI/Utils/MWZIndoorLocation.m; sourceTree = "<group>"; };
+		D6CDEB7B77CCAE5A8D211A20F190F380 /* MWZComponentUniversesButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWZComponentUniversesButton.h; path = MapwizeUI/UniverseButton/MWZComponentUniversesButton.h; sourceTree = "<group>"; };
+		D75652A8C0BB4E02045ED44443418002 /* ILIndoorLocation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ILIndoorLocation.m; path = "indoor-location-ios/ILIndoorLocation/ILIndoorLocation.m"; sourceTree = "<group>"; };
+		D992961F06902BB08C966482AE1C6BDE /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
+		D9C2B18B735483A400B58EE09C4CD126 /* MWZLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWZLayer.h; path = MapwizeForMapbox.framework/Headers/MWZLayer.h; sourceTree = "<group>"; };
+		DC74DCB566B40642242D2B23286DB6D1 /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
+		DD21BE9831F654C6159A67C3EE98AB19 /* hmac.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = hmac.h; path = SSZipArchive/minizip/aes/hmac.h; sourceTree = "<group>"; };
+		E06E7C196EFB19D51C618DFAC40FA264 /* aes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = aes.h; path = SSZipArchive/minizip/aes/aes.h; sourceTree = "<group>"; };
+		E1EF410F856C4E5F9368A75B03925DDF /* MWZComponentDirectionInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MWZComponentDirectionInfo.m; path = MapwizeUI/DirectionModule/MWZComponentDirectionInfo.m; sourceTree = "<group>"; };
+		E2BC684B8918297B07CCB93788E538B5 /* MWZObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWZObject.h; path = MapwizeForMapbox.framework/Headers/MWZObject.h; sourceTree = "<group>"; };
+		E423A294D2E9E96CB9DFBB222B69BD12 /* MWZUIOptions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWZUIOptions.h; path = MapwizeUI/Utils/MWZUIOptions.h; sourceTree = "<group>"; };
+		E4CBFF43083AB3300873C43EE24324A1 /* MWZApiFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWZApiFilter.h; path = MapwizeForMapbox.framework/Headers/MWZApiFilter.h; sourceTree = "<group>"; };
+		E4CC1C47D45E07CCD2C0FFAEEE852C5D /* pwd2key.c */ = {isa = PBXFileReference; includeInIndex = 1; name = pwd2key.c; path = SSZipArchive/minizip/aes/pwd2key.c; sourceTree = "<group>"; };
+		E5FA0AD097A56542FF28A3B6973D955B /* fileenc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = fileenc.h; path = SSZipArchive/minizip/aes/fileenc.h; sourceTree = "<group>"; };
 		E68AD8B14926602F203275C40C9DC54B /* Pods-YOYOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YOYOS.debug.xcconfig"; sourceTree = "<group>"; };
+		E6A0659A5C51B5307052C8B2664F7459 /* MWZDirectionOptions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWZDirectionOptions.h; path = MapwizeForMapbox.framework/Headers/MWZDirectionOptions.h; sourceTree = "<group>"; };
+		E8C86F543C1952CB4C301B40ABCE1422 /* MWZMapwizeView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWZMapwizeView.h; path = MapwizeUI/MapwizeView/MWZMapwizeView.h; sourceTree = "<group>"; };
+		EB931E3487B07A041090C0323545B101 /* MapwizeForMapbox.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MapwizeForMapbox.h; path = MapwizeForMapbox.framework/Headers/MapwizeForMapbox.h; sourceTree = "<group>"; };
+		EBA195C516E9994CA01E938FD7BBAED2 /* prng.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = prng.h; path = SSZipArchive/minizip/aes/prng.h; sourceTree = "<group>"; };
+		EBAEDCBFD568F91E6E7372A5BD965DE5 /* MWZComponentFollowUserButtonDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWZComponentFollowUserButtonDelegate.h; path = MapwizeUI/FollowUserButton/MWZComponentFollowUserButtonDelegate.h; sourceTree = "<group>"; };
+		EF3180D9674FA20D51536F9712AB8289 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
+		F28C998BE02A267C5DC02E2D8E9D1599 /* MWZMapwizePluginDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWZMapwizePluginDelegate.h; path = MapwizeForMapbox.framework/Headers/MWZMapwizePluginDelegate.h; sourceTree = "<group>"; };
+		F46A6F9E1A502A831A86EB358B184AE0 /* MWZComponentSubtitleCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MWZComponentSubtitleCell.m; path = MapwizeUI/ResultList/MWZComponentSubtitleCell.m; sourceTree = "<group>"; };
+		F4A40BC30F8A3825DB731884DBDF7B18 /* aescrypt.c */ = {isa = PBXFileReference; includeInIndex = 1; name = aescrypt.c; path = SSZipArchive/minizip/aes/aescrypt.c; sourceTree = "<group>"; };
 		F4E3ABFA9E167A53801952593635AE8F /* Pods-YOYOS-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-YOYOS-acknowledgements.markdown"; sourceTree = "<group>"; };
-		F5460AD0F6241621B45A17AB23A8E5B7 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
-		F640F61D5BEE8132009BAEAA65B587A4 /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
+		F6FB2790C38CCC14E9AFBC347476FD88 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
+		F86FE408B388D1510498FEE60FCE93C5 /* MWZDistanceResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWZDistanceResponse.h; path = MapwizeForMapbox.framework/Headers/MWZDistanceResponse.h; sourceTree = "<group>"; };
+		F8DF236C79FDB7309757B3E69932EA38 /* MWZComponentBottomInfoView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MWZComponentBottomInfoView.m; path = MapwizeUI/BottomInfoView/MWZComponentBottomInfoView.m; sourceTree = "<group>"; };
+		F933622FF48C66DAA2DEF418FE2F6B58 /* MWZComponentDirectionBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWZComponentDirectionBar.h; path = MapwizeUI/DirectionModule/MWZComponentDirectionBar.h; sourceTree = "<group>"; };
+		FA6D1444810BF3935C4DFE4EED8D0FA9 /* sha1.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sha1.h; path = SSZipArchive/minizip/aes/sha1.h; sourceTree = "<group>"; };
+		FB006E5D8F39B854324719E2C77B2C8C /* aestab.c */ = {isa = PBXFileReference; includeInIndex = 1; name = aestab.c; path = SSZipArchive/minizip/aes/aestab.c; sourceTree = "<group>"; };
+		FB5668C1886F791D366DB03B83C689ED /* SSZipArchive.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SSZipArchive.framework; path = SSZipArchive.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBB6FAD8B5CFC5162D719ED0C1F71039 /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
+		FC4AF873366D7050BD5633114AD33843 /* ILIndoorLocationProviderDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ILIndoorLocationProviderDelegate.h; path = "indoor-location-ios/ILIndoorLocation/ILIndoorLocationProviderDelegate.h"; sourceTree = "<group>"; };
+		FD1A3E38C7DA8657F3A07C5D2096C4FF /* MWZComponentFloorView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MWZComponentFloorView.m; path = MapwizeUI/FloorController/MWZComponentFloorView.m; sourceTree = "<group>"; };
+		FD72DBA347C4C773873B444922E79011 /* crypt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypt.h; path = SSZipArchive/minizip/crypt.h; sourceTree = "<group>"; };
 		FDA405CD5BF8E1B6AD05E4D132378AEF /* Pods-YOYOS-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-YOYOS-frameworks.sh"; sourceTree = "<group>"; };
+		FDDB6FA7D9389BDE1C0905B83DD74E8B /* MapwizeUI-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MapwizeUI-dummy.m"; sourceTree = "<group>"; };
+		FEC23E326EB9A987A9C78913A5E96348 /* SSZipCommon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSZipCommon.h; path = SSZipArchive/SSZipCommon.h; sourceTree = "<group>"; };
+		FF1F54A51641B7CC1EE0783D6F6EC3D4 /* minishared.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = minishared.h; path = SSZipArchive/minizip/minishared.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		94E708E47C6021E51B8AC67A56E36AE4 /* Frameworks */ = {
+		63D2C6AF7A654B6799DD66E4227700AE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				829E6E353926625A35E0EE37F73C4380 /* Foundation.framework in Frameworks */,
+				642238DB589BEC23F96F6D2ACDDD313A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CBF2A4355BC050438D9A6F09F98022B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7865993B71E0BCB8F2C84DE69FB6E642 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8038B2210968961E3EAC4092F86AE8A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				498DF66AE0B68ECDEF4EE52EA3B4262F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EED42D74DA1E44C69DFA7E24C35F7F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9F9F9BBBE217E7BC9FD7D352B0D58C6 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +503,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		043F109692688311ECA6BBF7E9B17949 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				81752CB0464DC7EEEA7D01F73D37866B /* SSZipArchive.modulemap */,
+				ACE1B4FF0ACB8473BB7DEE17B557DADC /* SSZipArchive.xcconfig */,
+				3B8363B66C6EC433FF121743C20242B4 /* SSZipArchive-dummy.m */,
+				301CAA6D282A8A1EDCDECC9071A54741 /* SSZipArchive-Info.plist */,
+				0928B335E75FCE836FF9E5A822637AC1 /* SSZipArchive-prefix.pch */,
+				12D4E28DF491FA4EDA000455AA608E04 /* SSZipArchive-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SSZipArchive";
+			sourceTree = "<group>";
+		};
 		102E20A2D13EFEB1309AE7053AA0BE1A /* Pods-YOYOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +534,63 @@
 			path = "Target Support Files/Pods-YOYOS";
 			sourceTree = "<group>";
 		};
+		1717FF451211C3EC671129E51061FEB7 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				99735ECCA5B1D385F7851ED71F9F4F5F /* MapwizeForMapbox.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MapwizeForMapbox";
+			sourceTree = "<group>";
+		};
+		265BB67E1634188BE876F3F33F75E594 /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				F6FB2790C38CCC14E9AFBC347476FD88 /* AFError.swift */,
+				65A45605474B882BC2840DFB787284B5 /* Alamofire.swift */,
+				FBB6FAD8B5CFC5162D719ED0C1F71039 /* DispatchQueue+Alamofire.swift */,
+				358E75D4D76B134E04E229C4C315D19D /* MultipartFormData.swift */,
+				A024354F3D2B99E2D70B198EADCB0AE7 /* NetworkReachabilityManager.swift */,
+				84FB3C27B6563AB00EB8C55FF35730AE /* Notifications.swift */,
+				5EEA517414EB5A1F4F2582ECC8344178 /* ParameterEncoding.swift */,
+				9C40F937CAA2C57FF18C360166AA7DB1 /* Request.swift */,
+				11EA557A195B578EAA0B58ACA3023742 /* Response.swift */,
+				D992961F06902BB08C966482AE1C6BDE /* ResponseSerialization.swift */,
+				38FB57E4153F6A4330A9087EC337CDEF /* Result.swift */,
+				DC74DCB566B40642242D2B23286DB6D1 /* ServerTrustPolicy.swift */,
+				45D080947C88AF01D927260DB3143E4A /* SessionDelegate.swift */,
+				D496AE8D9999120521941F6298EB8F2F /* SessionManager.swift */,
+				69EF2D2FA1B047F1D6C2B78FACAF897C /* TaskDelegate.swift */,
+				0B5E6EEACA02E5C433EB44D1B71BE3E8 /* Timeline.swift */,
+				EF3180D9674FA20D51536F9712AB8289 /* Validation.swift */,
+				288EA415238111C1F92D3A45C8E03D29 /* Support Files */,
+			);
+			name = Alamofire;
+			path = Alamofire;
+			sourceTree = "<group>";
+		};
+		288EA415238111C1F92D3A45C8E03D29 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0EE687F32409CD511122B2553A7390D0 /* Alamofire.modulemap */,
+				3D42BBDE0F5BE1320A7370F1E72A8824 /* Alamofire.xcconfig */,
+				A3F3E4216F40B7A9EC7DEF6F50A8FD07 /* Alamofire-dummy.m */,
+				6FB43DD2F26A2498FDCB7D10E4F1A6E6 /* Alamofire-Info.plist */,
+				37A86708A3BB7E399D079CC36176CB83 /* Alamofire-prefix.pch */,
+				88AAF9E7552FC54062A4D73F92B73B23 /* Alamofire-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Alamofire";
+			sourceTree = "<group>";
+		};
+		2DBF430896D9ACDF1F05A4E9C053A3B6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4AEDBC1A7450C73C48FD740759005613 /* Mapbox.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		45EA3C45FEEEAE3C27E4FC6420A28D8D /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -126,12 +599,177 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		90FDDC7F5D24472360CA259A8D40AE98 /* Pods */ = {
+		5D6EC2F13F326498190E193C161857B5 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				ABBD6121E62B33A53CF07892A75F2030 /* Alamofire */,
+				75362CD0F13BCEE64A12A8768AAB4055 /* MapwizeUI.modulemap */,
+				0ED27B469B984CDFC6E78F7B774BCB7C /* MapwizeUI.xcconfig */,
+				FDDB6FA7D9389BDE1C0905B83DD74E8B /* MapwizeUI-dummy.m */,
+				0DD4728DDA40BDDF87D138B13AE535B1 /* MapwizeUI-Info.plist */,
+				C54B2722779CD858B5D09462F540B991 /* MapwizeUI-prefix.pch */,
+				1018633D45B94870EC6D4E9DE7396650 /* MapwizeUI-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MapwizeUI";
+			sourceTree = "<group>";
+		};
+		68A313095B97D9E991562C95E78BA380 /* IndoorLocation */ = {
+			isa = PBXGroup;
+			children = (
+				9C28500DE3CC003191A2B753ED291B27 /* ILIndoorLocation.h */,
+				D75652A8C0BB4E02045ED44443418002 /* ILIndoorLocation.m */,
+				6F8B1659F7CA40B61A0CF176D198D95D /* ILIndoorLocationProvider.h */,
+				96A01EA614BFA904961A09F5646FDD78 /* ILIndoorLocationProvider.m */,
+				FC4AF873366D7050BD5633114AD33843 /* ILIndoorLocationProviderDelegate.h */,
+				D1E11D1D1C37EADFE8A1FE84BF430E2E /* IndoorLocation.h */,
+				EF744DC647F18298304C599DC3AB4546 /* Support Files */,
+			);
+			name = IndoorLocation;
+			path = IndoorLocation;
+			sourceTree = "<group>";
+		};
+		68E3D62BE9D19DBBF98B0CAE21FF9F1E /* Mapbox-iOS-SDK */ = {
+			isa = PBXGroup;
+			children = (
+				2DBF430896D9ACDF1F05A4E9C053A3B6 /* Frameworks */,
+				AE4DE16346E5F43C01CB0C40778003CF /* Support Files */,
+			);
+			name = "Mapbox-iOS-SDK";
+			path = "Mapbox-iOS-SDK";
+			sourceTree = "<group>";
+		};
+		7D5632CAAE95B7B03393790C7D69D3E6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				265BB67E1634188BE876F3F33F75E594 /* Alamofire */,
+				68A313095B97D9E991562C95E78BA380 /* IndoorLocation */,
+				68E3D62BE9D19DBBF98B0CAE21FF9F1E /* Mapbox-iOS-SDK */,
+				D21E4A95E0710041677C15F440D561F1 /* MapwizeForMapbox */,
+				8CA213A4AEE390AEC7EDC17226505F05 /* MapwizeUI */,
+				9339BC7B6BA240C114F08D0F423C89A8 /* SSZipArchive */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		8CA213A4AEE390AEC7EDC17226505F05 /* MapwizeUI */ = {
+			isa = PBXGroup;
+			children = (
+				7C021BA467E201794E905F660885F8B0 /* MapwizeUI.h */,
+				1B14602E08441FC6B3F5B30EAA0CB041 /* MWZComponentBorderedTextField.h */,
+				7878DDAAF62C5E4D54A95109F8054A24 /* MWZComponentBorderedTextField.m */,
+				881768668C80ECEB407738A8304268E2 /* MWZComponentBottomInfoView.h */,
+				F8DF236C79FDB7309757B3E69932EA38 /* MWZComponentBottomInfoView.m */,
+				06BDF39F7865FB0D9CD0C1FFAA8F31CA /* MWZComponentBottomInfoViewDelegate.h */,
+				A949F741333145F574B56A9BE62F92B1 /* MWZComponentColors.h */,
+				7F5B78493F1BEB507CCB373DD581C166 /* MWZComponentColors.m */,
+				474AA80F99C3E62FBBC77E3AD55F54C3 /* MWZComponentCompass.h */,
+				7158D455D81379F06617AC37FC5148AC /* MWZComponentCompass.m */,
+				1BC516404DDED2DCE75DC4E13B861D39 /* MWZComponentCompassDelegate.h */,
+				B62B75BB03983B5380587E4EDD33B5B7 /* MWZComponentCurrentLocationView.h */,
+				90A2673341B0C3E9A086035A613402D2 /* MWZComponentCurrentLocationView.m */,
+				F933622FF48C66DAA2DEF418FE2F6B58 /* MWZComponentDirectionBar.h */,
+				CF240AF19C50E7AE6D0ADA4DA10D0206 /* MWZComponentDirectionBar.m */,
+				971B2B928534FF9E08E6D8DA461E262D /* MWZComponentDirectionBarDelegate.h */,
+				4C32F45BFE02B2E314EC56D33B7DE237 /* MWZComponentDirectionInfo.h */,
+				E1EF410F856C4E5F9368A75B03925DDF /* MWZComponentDirectionInfo.m */,
+				35271E130C2BDDE5AFD6DEA727537294 /* MWZComponentFloorController.h */,
+				7EC84D0BE1BEDC8863EA46FF88AD697A /* MWZComponentFloorController.m */,
+				5ED658E37CE0FD7E391307F87A9D2800 /* MWZComponentFloorView.h */,
+				FD1A3E38C7DA8657F3A07C5D2096C4FF /* MWZComponentFloorView.m */,
+				6F7AEADDE89F1EE6480AAB2395A99F61 /* MWZComponentFollowUserButton.h */,
+				1642D92C586DAE363E4E0B4D2C4456E8 /* MWZComponentFollowUserButton.m */,
+				EBAEDCBFD568F91E6E7372A5BD965DE5 /* MWZComponentFollowUserButtonDelegate.h */,
+				986F696EF0D5C7538FCCC634A9877002 /* MWZComponentGroupedResultList.h */,
+				6F2C5CF45C05BC6FF8807E177537F8EC /* MWZComponentGroupedResultList.m */,
+				BDD6DBAFBB76DF008B9822AC239966A4 /* MWZComponentGroupedResultListDelegate.h */,
+				977E40530391DB663595FD1001BFDBB4 /* MWZComponentIconTextButton.h */,
+				2A1C2E22D75AC65315708E41C641A674 /* MWZComponentIconTextButton.m */,
+				CA6EA043428D44F5C181030A2070C0E0 /* MWZComponentLanguagesButton.h */,
+				0360EB9D101D0E3B6FAD47F78CA4666C /* MWZComponentLanguagesButton.m */,
+				CB9DDEB0A88C1546F99289F6C11091C1 /* MWZComponentLanguagesButtonDelegate.h */,
+				CB2DD3F3321C851B5BC4F2C7AF366C5B /* MWZComponentLoadingBar.h */,
+				11429941570553AC5BAAF70098F3A451 /* MWZComponentLoadingBar.m */,
+				6C9C04A6ECA6154CE2F6A2B2CDBAD610 /* MWZComponentQrCodeButton.h */,
+				1746CAFD4D639F7002563721D2E47DD7 /* MWZComponentQrCodeButton.m */,
+				D27355383B9E2DD2FD0FB24558405853 /* MWZComponentQrCodeButtonDelegate.h */,
+				3EF03F60E96B48CAAEA782B432291A30 /* MWZComponentResultList.h */,
+				47434C4BC6FA0335F9EAF841D380F2EB /* MWZComponentResultList.m */,
+				8F743720023BA46D62178BA4F31BBDEF /* MWZComponentResultListDelegate.h */,
+				4A404795D8D21BC9EEACF9C9996AEC2F /* MWZComponentSearchBar.h */,
+				952C3C4F43714F06EDE4604955035E83 /* MWZComponentSearchBar.m */,
+				4F90518DBDFA8B113DA0313D31F947C4 /* MWZComponentSearchBarDelegate.h */,
+				4929FA85ED4769B66EB35E345E5A2587 /* MWZComponentSubtitleCell.h */,
+				F46A6F9E1A502A831A86EB358B184AE0 /* MWZComponentSubtitleCell.m */,
+				9681BF23A1743FD8AF942304A7F1EB67 /* MWZComponentTitleCell.h */,
+				917B52C8046C1A65D64916BE1349B213 /* MWZComponentTitleCell.m */,
+				D1FEE037F6A31B7DACC8CF8A8861D7A7 /* MWZComponentTitleWithoutFloorCellTableViewCell.h */,
+				4EBF1E7D6715BAC85B622A18F4171D9F /* MWZComponentTitleWithoutFloorCellTableViewCell.m */,
+				D6CDEB7B77CCAE5A8D211A20F190F380 /* MWZComponentUniversesButton.h */,
+				5FE9ECA9E4B79451DD931B1D6A28B764 /* MWZComponentUniversesButton.m */,
+				865882D724CCCC2A36B122EB3A4C3171 /* MWZComponentUniversesButtonDelegate.h */,
+				78D1447667EA0DD84BDB4643204E81D1 /* MWZIndoorLocation.h */,
+				D556AEAB8AAB29D7F79887B10421CACE /* MWZIndoorLocation.m */,
+				E8C86F543C1952CB4C301B40ABCE1422 /* MWZMapwizeView.h */,
+				AC809F5703EBFB2E769EF47CD4266B4F /* MWZMapwizeView.m */,
+				1967AC0498B61D6E8603BEDE82605791 /* MWZMapwizeViewDelegate.h */,
+				6A4FE140062739181F8B1C6E582F4EFD /* MWZMapwizeViewUISettings.h */,
+				9D4A43E44C78A7ED3C2815A61727A75B /* MWZMapwizeViewUISettings.m */,
+				3FC07D9A6B876E6CBCD375B1CA8CE7D6 /* MWZSearchData.h */,
+				9501D1F128E67A15F8FCC8DEC8EED6D4 /* MWZSearchData.m */,
+				E423A294D2E9E96CB9DFBB222B69BD12 /* MWZUIOptions.h */,
+				CC0A703912C420FC9EDBB30D567404C3 /* MWZUIOptions.m */,
+				BF76ACFD8B2E75619AEC55BA1E35D325 /* Resources */,
+				5D6EC2F13F326498190E193C161857B5 /* Support Files */,
+			);
+			name = MapwizeUI;
+			path = MapwizeUI;
+			sourceTree = "<group>";
+		};
+		9339BC7B6BA240C114F08D0F423C89A8 /* SSZipArchive */ = {
+			isa = PBXGroup;
+			children = (
+				E06E7C196EFB19D51C618DFAC40FA264 /* aes.h */,
+				62F4F18F0A2FEF722059EED094338E9F /* aes_ni.c */,
+				6A40EF1558F323685929980CCDA321EF /* aes_ni.h */,
+				F4A40BC30F8A3825DB731884DBDF7B18 /* aescrypt.c */,
+				C004A9D4AB6EE5908B8E055FE9107FC3 /* aeskey.c */,
+				1D61C60B1C96C98C072161A969AB9A70 /* aesopt.h */,
+				FB006E5D8F39B854324719E2C77B2C8C /* aestab.c */,
+				6E65926AD7CAACD657BE81EF3D70D880 /* aestab.h */,
+				A67EA45BEE6DE7B68053EC185FC71E4D /* brg_endian.h */,
+				AE4B384D31CB83236C1C0A5594010BEF /* brg_types.h */,
+				303CA55F9A75CA86ACF93AE48DD01740 /* crypt.c */,
+				FD72DBA347C4C773873B444922E79011 /* crypt.h */,
+				648349CC6873ED119F18D0C4896C400D /* fileenc.c */,
+				E5FA0AD097A56542FF28A3B6973D955B /* fileenc.h */,
+				437C16D132702DF03F40AA0583E66258 /* hmac.c */,
+				DD21BE9831F654C6159A67C3EE98AB19 /* hmac.h */,
+				9B63C848288CA4D21A4828C3E15BC260 /* ioapi.c */,
+				41632AD657B62EA3982B6AC5ECDC537D /* ioapi.h */,
+				4BD28478B58437F5704522F5D80BC116 /* ioapi_buf.c */,
+				4E813CA30902014FCC346000C644691E /* ioapi_buf.h */,
+				43F8BD74EE56F774CED718C3F3059DBB /* ioapi_mem.c */,
+				7E7D6AFEC006402412F58536FACFD6F3 /* ioapi_mem.h */,
+				012DC6F530BE46D06988C460573ACFE5 /* minishared.c */,
+				FF1F54A51641B7CC1EE0783D6F6EC3D4 /* minishared.h */,
+				5BD7FAC0D64590A19DD6EF4CC5ABF73F /* prng.c */,
+				EBA195C516E9994CA01E938FD7BBAED2 /* prng.h */,
+				E4CC1C47D45E07CCD2C0FFAEEE852C5D /* pwd2key.c */,
+				27C087EF26714960426171345CDAEFB7 /* pwd2key.h */,
+				906C8E1B0B82D4C4276724854455775A /* sha1.c */,
+				FA6D1444810BF3935C4DFE4EED8D0FA9 /* sha1.h */,
+				50BBB65B65D0619ABCBBFC5A5DE26CCC /* SSZipArchive.h */,
+				22AFA50A971E9D6D83A0DBDC714B4C99 /* SSZipArchive.m */,
+				FEC23E326EB9A987A9C78913A5E96348 /* SSZipCommon.h */,
+				1F598EB879B83487A83A9B84222F3094 /* unzip.c */,
+				096FE8577A16B99AE77A0E7008233E51 /* unzip.h */,
+				50D02D39E48C5309D700095173FE1A01 /* zip.c */,
+				BC9DDE0D091856589D44ADDBEED4EB16 /* zip.h */,
+				9478F3825387470391C59AC5DFDCED5E /* ZipArchive.h */,
+				043F109692688311ECA6BBF7E9B17949 /* Support Files */,
+			);
+			name = SSZipArchive;
+			path = SSZipArchive;
 			sourceTree = "<group>";
 		};
 		9B055D0CFEA43187E72B03DED11F5662 /* iOS */ = {
@@ -142,53 +780,34 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		9B4BD2CBD363D1B29EAFE26536731C47 /* Products */ = {
+		AE4DE16346E5F43C01CB0C40778003CF /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				82DF017C51DF41C18AC359BBE49CFFA9 /* Alamofire.framework */,
-				6D30DC96A019B5A49BFDEAF2DEF90276 /* Pods_YOYOS.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		9BA86B3EDA3C295EC1B9E7963803A4C5 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				4F652B81B77453471CD91E7CE335DD64 /* Alamofire.modulemap */,
-				A0F6B1DBF2B95867B02CA909027E6CA1 /* Alamofire.xcconfig */,
-				BE16989701DCA0B781F86A093D7C5E22 /* Alamofire-dummy.m */,
-				96AC98D0CCFA778066DE3211DF4A612B /* Alamofire-Info.plist */,
-				7545CF55BE345EA7C318A64E7BFB1C70 /* Alamofire-prefix.pch */,
-				15A825CFEBAE606149BF0047C9F5B209 /* Alamofire-umbrella.h */,
+				76C4E1F5EF286DF066FD2520A85BA0DB /* Mapbox-iOS-SDK.xcconfig */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/Alamofire";
+			path = "../Target Support Files/Mapbox-iOS-SDK";
 			sourceTree = "<group>";
 		};
-		ABBD6121E62B33A53CF07892A75F2030 /* Alamofire */ = {
+		BF76ACFD8B2E75619AEC55BA1E35D325 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				8D5A0E300C04A6DF88D620788FE38780 /* AFError.swift */,
-				1C15C076B531E2E7744C358418A0C0B5 /* Alamofire.swift */,
-				AFF7F7716086D54E6308EE52C8227B87 /* DispatchQueue+Alamofire.swift */,
-				BFCE3D7EDCA41F256D471B40BBFD3FCE /* MultipartFormData.swift */,
-				F5460AD0F6241621B45A17AB23A8E5B7 /* NetworkReachabilityManager.swift */,
-				B06639F7A76DB8A9D0D0E41CDD7A6684 /* Notifications.swift */,
-				0D01BA8472F25D39F718F71557EDC8DD /* ParameterEncoding.swift */,
-				9D59E1AD3CC394A93392FF3DC8CF2961 /* Request.swift */,
-				CCC6858C85690F7AFEA7F6542EE9A69A /* Response.swift */,
-				7B03859BDC36782899379E222720A297 /* ResponseSerialization.swift */,
-				DD807F155301ECA538A2C1C296E1186D /* Result.swift */,
-				C4453BE339B79900FDC53E34FE5589CB /* ServerTrustPolicy.swift */,
-				F640F61D5BEE8132009BAEAA65B587A4 /* SessionDelegate.swift */,
-				3D7E25E371731FAE44F46A9F392CB5D5 /* SessionManager.swift */,
-				75C759635F88377BD7E2DEDE04C23C62 /* TaskDelegate.swift */,
-				32DB5272AD01ECD0B09A86818A7754C4 /* Timeline.swift */,
-				33115EC2A5164913C68F8BD170389EEE /* Validation.swift */,
-				9BA86B3EDA3C295EC1B9E7963803A4C5 /* Support Files */,
+				CBB91380C3A9737380B63FE072142155 /* en.lproj */,
+				4B124DD5BA24DC063D394AE855AE18A0 /* mwzimages.xcassets */,
 			);
-			name = Alamofire;
-			path = Alamofire;
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		C2A1D39A5EB3A4733A075E245DC0A00D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				687F6FB615C36CC40B0C2FC8A4099BF1 /* Alamofire.framework */,
+				8FA12CA39F6F5703773A76CC889CB227 /* IndoorLocation.framework */,
+				9E0F7AD807FCEAA8A05317981C7B3130 /* MapwizeUI.framework */,
+				4C17CA0CB2143BD4B330473CE5DA2F60 /* Pods_YOYOS.framework */,
+				FB5668C1886F791D366DB03B83C689ED /* SSZipArchive.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -196,8 +815,8 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				90FDDC7F5D24472360CA259A8D40AE98 /* Pods */,
-				9B4BD2CBD363D1B29EAFE26536731C47 /* Products */,
+				7D5632CAAE95B7B03393790C7D69D3E6 /* Pods */,
+				C2A1D39A5EB3A4733A075E245DC0A00D /* Products */,
 				45EA3C45FEEEAE3C27E4FC6420A28D8D /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -210,14 +829,83 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D21E4A95E0710041677C15F440D561F1 /* MapwizeForMapbox */ = {
+			isa = PBXGroup;
+			children = (
+				EB931E3487B07A041090C0323545B101 /* MapwizeForMapbox.h */,
+				C34AD589FF88FE73E4ED0595A04B1C26 /* MapwizePlugin.h */,
+				B0751B383A76E44FC3C0819069F7C956 /* MWZAccountManager.h */,
+				35BE82D36AA654510F090844BA7AFC3A /* MWZApi.h */,
+				E4CBFF43083AB3300873C43EE24324A1 /* MWZApiFilter.h */,
+				BA174EF872EA790B4BD8926DC2BB418F /* MWZApiResponseParser.h */,
+				1EBE9702C61DEFCF90F11006498B4634 /* MWZClickEvent.h */,
+				3EC06D3827430769CD3F2206223E4C71 /* MWZClickEventTypes.h */,
+				85FB65DAB1B2091C6E45E7DCEB3F441A /* MWZDirection.h */,
+				E6A0659A5C51B5307052C8B2664F7459 /* MWZDirectionOptions.h */,
+				8A715A430D2B8B8F6985B6418D37A0D4 /* MWZDirectionPoint.h */,
+				1D0BD92C08BBAE75B4D305969A5684FD /* MWZDirectionWrapper.h */,
+				2BA746BB02E0560A592FE555889B28B6 /* MWZDirectionWrapperAndDistance.h */,
+				F86FE408B388D1510498FEE60FCE93C5 /* MWZDistanceResponse.h */,
+				3DC3A2CA889596144663A9BA6BE01391 /* MWZFollowUserButton.h */,
+				6B1134C31D698AF3DAA4E896E90E4C9E /* MWZFollowUserModeEnum.h */,
+				8BB10487C5077168003BF863D3921CC4 /* MWZLatLng.h */,
+				C79855E27675A68100F4E5BEAE1B5A26 /* MWZLatLngFloor.h */,
+				98CAF3654DB2D06DD5507F56EFE9108F /* MWZLatLngFloorInVenue.h */,
+				D9C2B18B735483A400B58EE09C4CD126 /* MWZLayer.h */,
+				23306284C849BDA38A38888669CC7A1F /* MWZMapwizeAnnotation.h */,
+				F28C998BE02A267C5DC02E2D8E9D1599 /* MWZMapwizePluginDelegate.h */,
+				E2BC684B8918297B07CCB93788E538B5 /* MWZObject.h */,
+				1AC2BF44B4F1D3EEFE23E1F09B1FA661 /* MWZOfflineManager.h */,
+				3EFDCB060184ADACB27B7A09220E8F3F /* MWZOptions.h */,
+				1B4CF8E2C89F924D1A2B4F62C3E967B3 /* MWZParsedUrlObject.h */,
+				336D28A25E4A3D52EA6D3A646B649125 /* MWZPlace.h */,
+				0B39318F8DE6AB5A6F859B2456E24649 /* MWZPlaceList.h */,
+				687C16989879E8EBB929BDCFC23B9A21 /* MWZRoute.h */,
+				A226E90F9D6FEC0A09AD60E9BB374AF0 /* MWZSearchParams.h */,
+				05660E3DDDFF92CBDB88F68F9265E364 /* MWZStyle.h */,
+				7C74C4FF72EF40614C483243B7F4338C /* MWZTranslation.h */,
+				7075C6E48327708B0F4874940ACF5482 /* MWZTypeDefinition.h */,
+				CB7BBB405CAB36CEC8B1115566B188B6 /* MWZUISettings.h */,
+				8AF4535DB985DD763D47357B9B250CB4 /* MWZUniverse.h */,
+				86A3B10CFD1B349BF411755C46F65DD5 /* MWZUserInfo.h */,
+				71F45E69CF2457A0DA4C85FB3D2879EB /* MWZVenue.h */,
+				D23FCBB44B8D360637ED11E9D9F99D9C /* Frameworks */,
+				1717FF451211C3EC671129E51061FEB7 /* Support Files */,
+			);
+			name = MapwizeForMapbox;
+			path = MapwizeForMapbox;
+			sourceTree = "<group>";
+		};
+		D23FCBB44B8D360637ED11E9D9F99D9C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				89F07AE8EE2E9C24E464BCC5B5754E13 /* MapwizeForMapbox.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EF744DC647F18298304C599DC3AB4546 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3262C46B98E23BF08D5E2989AA11F57D /* IndoorLocation.modulemap */,
+				889CAD9C9DA2ECB1BF114EBFD2B05ED7 /* IndoorLocation.xcconfig */,
+				3B66AC6ABCAD23929829B5410C3C8D01 /* IndoorLocation-dummy.m */,
+				675C1FBCEC14F98EC35BE2A38EE9A731 /* IndoorLocation-Info.plist */,
+				131EC5E66FAB577CBEE46ADB0A01F23F /* IndoorLocation-prefix.pch */,
+				619C0BC7555A0A829D451BC2EFA64CBE /* IndoorLocation-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/IndoorLocation";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		18B0E3AF549B3CC091727650A4578E03 /* Headers */ = {
+		094A157D34EBB8EF9FAAA2E8BD201F05 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3CD6CA17A77CFD21365DC130286843C /* Pods-YOYOS-umbrella.h in Headers */,
+				0F37EF98470C99113C6F0343AB5CEACC /* Pods-YOYOS-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,26 +917,112 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CC36917128D4524E6C92F13675B6B989 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				749DBF6FC78EE6DB345930871F3A383A /* aes.h in Headers */,
+				A76378F4A53617B40F4C7541BB01C6FA /* aes_ni.h in Headers */,
+				E6F808A1A64D407F1B13643872237E54 /* aesopt.h in Headers */,
+				2C7D7CA9BC3F845C22508E965DC52CB6 /* aestab.h in Headers */,
+				F54748FC5E43D1FC6EC20910B81917F1 /* brg_endian.h in Headers */,
+				8728249C60E099B12F2A4A7E27956F87 /* brg_types.h in Headers */,
+				E988A48C5A013B20A81B9C761C5FC779 /* crypt.h in Headers */,
+				6C47F6ED41FEB9ED024B96756010146F /* fileenc.h in Headers */,
+				BED4344C398CFF1B3DCDCFC0F9FC8901 /* hmac.h in Headers */,
+				904AED4511F28C864CBE9A771671EE5E /* ioapi.h in Headers */,
+				96CCDD362B344DC1F6595FA2F86FD692 /* ioapi_buf.h in Headers */,
+				7ABB259F16286E9C3E59626C965106E5 /* ioapi_mem.h in Headers */,
+				F9CA5A3E9EBDF3B8DA907A687C708303 /* minishared.h in Headers */,
+				D6ACFF9E178C72353131B4645144FB3D /* prng.h in Headers */,
+				0606FB6C439CBFB9E4EACF220AECC63E /* pwd2key.h in Headers */,
+				9FE1F8EF316C4ABC5638680E83E61756 /* sha1.h in Headers */,
+				02FE22D10053A8B7E0FD81827E934695 /* SSZipArchive-umbrella.h in Headers */,
+				F1B14B28BA6F0271FA77396D2EAF0902 /* SSZipArchive.h in Headers */,
+				9B478DB3E4DBF9C85B6CB6F5F8A17A38 /* SSZipCommon.h in Headers */,
+				277FCBD29879350F95C9E70D593F2508 /* unzip.h in Headers */,
+				BD68C7741278A7C859C82BC02BC5F478 /* zip.h in Headers */,
+				1FF0C2E9DF1E6A994C901C37872554F5 /* ZipArchive.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8F8E6AF3D5B98F23B5D27F3A7FAFC0A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE5C3D52B560A5E222448274F211B65B /* MapwizeUI-umbrella.h in Headers */,
+				643864D6B70556299F05C1F01153168E /* MapwizeUI.h in Headers */,
+				D6D274BEEE8ECCF1B202EC6EA12CD6D8 /* MWZComponentBorderedTextField.h in Headers */,
+				3AA8C76B9FD4566F29CF6D9F66ECAD0C /* MWZComponentBottomInfoView.h in Headers */,
+				A5E9E0C1E1859F93012F0EE56FB3C9AB /* MWZComponentBottomInfoViewDelegate.h in Headers */,
+				703DDB6284EC57A54D18E43B16FAE7C9 /* MWZComponentColors.h in Headers */,
+				2E3B1D13C18CEDA20F343E0D9FF3B260 /* MWZComponentCompass.h in Headers */,
+				2A41E60A47B17D51A1FD1FA1B0028DF4 /* MWZComponentCompassDelegate.h in Headers */,
+				CDEC7A3EFEB0B027C64441E1D63E3EC4 /* MWZComponentCurrentLocationView.h in Headers */,
+				0CE8200D197B029134E0526D02D89493 /* MWZComponentDirectionBar.h in Headers */,
+				776EEB9F01AB2D1A256EF36A1BBD1FA6 /* MWZComponentDirectionBarDelegate.h in Headers */,
+				4DEED421D5C39C1D30A0A4BA9722862E /* MWZComponentDirectionInfo.h in Headers */,
+				44D9B5B20DB415EA6A0D5A54EFE9AF3B /* MWZComponentFloorController.h in Headers */,
+				39C709B148339FD61D86C1F980A7D510 /* MWZComponentFloorView.h in Headers */,
+				5C922994594A0B87A307CBAE46AE7F53 /* MWZComponentFollowUserButton.h in Headers */,
+				140157E5B6EE4AE1FC540AD0746DBC53 /* MWZComponentFollowUserButtonDelegate.h in Headers */,
+				97CCC4CA9938608B7AA6219A01F2DE1E /* MWZComponentGroupedResultList.h in Headers */,
+				AEB5562119E6D7C6256837C84E74D4A9 /* MWZComponentGroupedResultListDelegate.h in Headers */,
+				D4DF3A7D3016E8CA86BF52733517B155 /* MWZComponentIconTextButton.h in Headers */,
+				6F7A1F164ABC269F8AB018BD1D99DADB /* MWZComponentLanguagesButton.h in Headers */,
+				AEB72C2C49A8C19440EAF24080DB2CBF /* MWZComponentLanguagesButtonDelegate.h in Headers */,
+				4D94A4505ED9D69D654F9235849A116C /* MWZComponentLoadingBar.h in Headers */,
+				0C930430197A709A89DE1B584325D647 /* MWZComponentQrCodeButton.h in Headers */,
+				C0672AC7C1D7F249FDF393A437155CFF /* MWZComponentQrCodeButtonDelegate.h in Headers */,
+				73DE6629B45C4850A3119D7A9F1FD4BF /* MWZComponentResultList.h in Headers */,
+				C88A8B1CA70830774C496686C94EBD28 /* MWZComponentResultListDelegate.h in Headers */,
+				92C4577CF16F4979DA21426D92D5E177 /* MWZComponentSearchBar.h in Headers */,
+				D9572CCB5B9CA0E602B5FD1F9A2ECE43 /* MWZComponentSearchBarDelegate.h in Headers */,
+				FFF6C4331CE51BD7D89C9C1DA083DC97 /* MWZComponentSubtitleCell.h in Headers */,
+				3B804FCC7297326C2E75C8EA354907A5 /* MWZComponentTitleCell.h in Headers */,
+				0853BC5666B123E898DCC1590E5BCFA0 /* MWZComponentTitleWithoutFloorCellTableViewCell.h in Headers */,
+				739A49CFA370B72D6619DE11384B683A /* MWZComponentUniversesButton.h in Headers */,
+				39D399C26D9C144CAB235B8A2728E6A3 /* MWZComponentUniversesButtonDelegate.h in Headers */,
+				89173BC15C329316685E649D72F143A1 /* MWZIndoorLocation.h in Headers */,
+				F27098BC58CCB14C51D70AED922DE3B6 /* MWZMapwizeView.h in Headers */,
+				2BDB02681973038BDCC6D9F439578737 /* MWZMapwizeViewDelegate.h in Headers */,
+				CB384EAC0E902C39DA0F04DA590D444C /* MWZMapwizeViewUISettings.h in Headers */,
+				AF8879667E884B5014A9861ACD87051F /* MWZSearchData.h in Headers */,
+				BAC093CCFB1634DDE9B4034EE16C36D0 /* MWZUIOptions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F92BEC625AFEC0B592E949F7A0D81FD0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8D01B3B6E9E23B7E2251792AAE96D5D /* ILIndoorLocation.h in Headers */,
+				48009BC3E91B03980150785CA839D0CB /* ILIndoorLocationProvider.h in Headers */,
+				D3BBE994BB6FF462B2DF1AE3FE90D5A2 /* ILIndoorLocationProviderDelegate.h in Headers */,
+				47553C4524C885AB67CB8B0C4A0674A2 /* IndoorLocation-umbrella.h in Headers */,
+				C2D7E3D7EB1EDC1AB3046CD9869E9BC8 /* IndoorLocation.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		0AE1607A0AD09CCBF0859DDDAD662468 /* Pods-YOYOS */ = {
+		2AEF7C96AD3290F1938695E88317888D /* SSZipArchive */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 09FC826A138838B9ED4365930F9F7D43 /* Build configuration list for PBXNativeTarget "Pods-YOYOS" */;
+			buildConfigurationList = 2C6960A5FF20F02C0E5285917190C0B6 /* Build configuration list for PBXNativeTarget "SSZipArchive" */;
 			buildPhases = (
-				18B0E3AF549B3CC091727650A4578E03 /* Headers */,
-				17AD53368369F8E123235E4D97C5B020 /* Sources */,
-				94E708E47C6021E51B8AC67A56E36AE4 /* Frameworks */,
-				3D1B5E35D97457F76E8F3166D32A687D /* Resources */,
+				CC36917128D4524E6C92F13675B6B989 /* Headers */,
+				A73345A9F80EA8EAB34B16306F515D53 /* Sources */,
+				63D2C6AF7A654B6799DD66E4227700AE /* Frameworks */,
+				5BAC2C9839C44DE8A8077B1DDE3B469C /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				00F76692CE84E0BDAAC6CBD1A9054926 /* PBXTargetDependency */,
 			);
-			name = "Pods-YOYOS";
-			productName = "Pods-YOYOS";
-			productReference = 6D30DC96A019B5A49BFDEAF2DEF90276 /* Pods_YOYOS.framework */;
+			name = SSZipArchive;
+			productName = SSZipArchive;
+			productReference = FB5668C1886F791D366DB03B83C689ED /* SSZipArchive.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		3383968E74B5371B20BB519B170DC7FD /* Alamofire */ = {
@@ -266,7 +1040,68 @@
 			);
 			name = Alamofire;
 			productName = Alamofire;
-			productReference = 82DF017C51DF41C18AC359BBE49CFFA9 /* Alamofire.framework */;
+			productReference = 687F6FB615C36CC40B0C2FC8A4099BF1 /* Alamofire.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AD696E829B658AFDFE65BCF6F73F4165 /* Pods-YOYOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2EE615AB8A2A15B15277BBD95E14F80 /* Build configuration list for PBXNativeTarget "Pods-YOYOS" */;
+			buildPhases = (
+				094A157D34EBB8EF9FAAA2E8BD201F05 /* Headers */,
+				8D8A3A4179A08FBF9A858BFFFA6F14B6 /* Sources */,
+				6CBF2A4355BC050438D9A6F09F98022B /* Frameworks */,
+				BCCC8BD400E5834EA1A4A97D08158805 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				439E95B02A46AB0C3D0D564B1DBACB95 /* PBXTargetDependency */,
+				02AA1B3E818ED6DAD35A8960062D9DB7 /* PBXTargetDependency */,
+				F1BD47EB510CC018EEF2AA5E21C85C3C /* PBXTargetDependency */,
+				EE26CAE66979DA505FD9C49C4D61E47D /* PBXTargetDependency */,
+				9749143731A2C5C081508F5513833DF9 /* PBXTargetDependency */,
+				39F54CA8A4D935D8F4E8D5B827A21D48 /* PBXTargetDependency */,
+			);
+			name = "Pods-YOYOS";
+			productName = "Pods-YOYOS";
+			productReference = 4C17CA0CB2143BD4B330473CE5DA2F60 /* Pods_YOYOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AF360B618D54578802B211E302DC7213 /* IndoorLocation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D08C58AACDA12DA5792C4E4C07A064F /* Build configuration list for PBXNativeTarget "IndoorLocation" */;
+			buildPhases = (
+				F92BEC625AFEC0B592E949F7A0D81FD0 /* Headers */,
+				EE49391117F75B88382C8B4F600CD945 /* Sources */,
+				8EED42D74DA1E44C69DFA7E24C35F7F4 /* Frameworks */,
+				0EDE84E76825E5A19808EF2CF29FBA63 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IndoorLocation;
+			productName = IndoorLocation;
+			productReference = 8FA12CA39F6F5703773A76CC889CB227 /* IndoorLocation.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D90AA3703DBDDA662DD88D45780ABB38 /* MapwizeUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97A4BCF7737B50AD6884B07BEBDDADDA /* Build configuration list for PBXNativeTarget "MapwizeUI" */;
+			buildPhases = (
+				E8F8E6AF3D5B98F23B5D27F3A7FAFC0A /* Headers */,
+				4BCC119E96DCA87EC1843AF4C8E1DF46 /* Sources */,
+				8038B2210968961E3EAC4092F86AE8A2 /* Frameworks */,
+				EE8DF2E7815C8AF39324A376FAB3CB4D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4B7D8CCE08CF99AE48441EB400CD0652 /* PBXTargetDependency */,
+			);
+			name = MapwizeUI;
+			productName = MapwizeUI;
+			productReference = 9E0F7AD807FCEAA8A05317981C7B3130 /* MapwizeUI.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -286,17 +1121,29 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 9B4BD2CBD363D1B29EAFE26536731C47 /* Products */;
+			productRefGroup = C2A1D39A5EB3A4733A075E245DC0A00D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				3383968E74B5371B20BB519B170DC7FD /* Alamofire */,
-				0AE1607A0AD09CCBF0859DDDAD662468 /* Pods-YOYOS */,
+				AF360B618D54578802B211E302DC7213 /* IndoorLocation */,
+				33FD49C316A380C97D6435712607313B /* Mapbox-iOS-SDK */,
+				49EC2F2E4B057B8A5A2956F5263AE094 /* MapwizeForMapbox */,
+				D90AA3703DBDDA662DD88D45780ABB38 /* MapwizeUI */,
+				AD696E829B658AFDFE65BCF6F73F4165 /* Pods-YOYOS */,
+				2AEF7C96AD3290F1938695E88317888D /* SSZipArchive */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0EDE84E76825E5A19808EF2CF29FBA63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		28FF73341543B6F0A7DF3C20CFFEA0AA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -304,21 +1151,71 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3D1B5E35D97457F76E8F3166D32A687D /* Resources */ = {
+		5BAC2C9839C44DE8A8077B1DDE3B469C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BCCC8BD400E5834EA1A4A97D08158805 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE8DF2E7815C8AF39324A376FAB3CB4D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				106345F365407C6FA4A8E286353BC2AD /* en.lproj in Resources */,
+				94DA31445BC367095D6E38BF831E7B67 /* mwzimages.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		17AD53368369F8E123235E4D97C5B020 /* Sources */ = {
+		4BCC119E96DCA87EC1843AF4C8E1DF46 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99BAF3B34379CF6AC006BEE3273AE542 /* Pods-YOYOS-dummy.m in Sources */,
+				DF5E5C5824333853A1E7C3E385136A71 /* MapwizeUI-dummy.m in Sources */,
+				B9FD977D51C96B9257A57E5B7D348C43 /* MWZComponentBorderedTextField.m in Sources */,
+				835454E56D2EE2D1AD796D445DE3FDC4 /* MWZComponentBottomInfoView.m in Sources */,
+				9979E499E47F22B79CD434B774EB9739 /* MWZComponentColors.m in Sources */,
+				6D30B4E34CFC264F4A2A47B5156BA835 /* MWZComponentCompass.m in Sources */,
+				085A0A9BF7EE55442630CF0DBDCF7330 /* MWZComponentCurrentLocationView.m in Sources */,
+				0C3D0CE175A895B4D94755D63688D701 /* MWZComponentDirectionBar.m in Sources */,
+				CA923BD41EA5F1C92524A0D64CA27811 /* MWZComponentDirectionInfo.m in Sources */,
+				4C26CB6DB37B0155FBD3ECEA764C8E95 /* MWZComponentFloorController.m in Sources */,
+				EF0B278986BF12992D7AD40E2881771F /* MWZComponentFloorView.m in Sources */,
+				F34B3B7D2880EA5AF376BF5BAB6FB42C /* MWZComponentFollowUserButton.m in Sources */,
+				24D855BBB3AA3C6F7F086FB391824651 /* MWZComponentGroupedResultList.m in Sources */,
+				12A51B81378B6416B305D720DFC1A384 /* MWZComponentIconTextButton.m in Sources */,
+				9953A5BFC517944164C08FE266520476 /* MWZComponentLanguagesButton.m in Sources */,
+				C7E00522F42BCD2E1E9C6128AE906044 /* MWZComponentLoadingBar.m in Sources */,
+				3364BC826D496343B8E5FD2E81DE95FB /* MWZComponentQrCodeButton.m in Sources */,
+				4C04A168DF5311449E975A6635DF2AB4 /* MWZComponentResultList.m in Sources */,
+				AF480A6B319DFEA00C68735BE7A2A76C /* MWZComponentSearchBar.m in Sources */,
+				19C36E782A712849BD7CC0613013698E /* MWZComponentSubtitleCell.m in Sources */,
+				013E286346FCF5256880B3AD3B1AF97B /* MWZComponentTitleCell.m in Sources */,
+				07460F820AA90F7FD6E46C4883F24ECD /* MWZComponentTitleWithoutFloorCellTableViewCell.m in Sources */,
+				DAF6D3E1524E51F7AF70F6DF2495798C /* MWZComponentUniversesButton.m in Sources */,
+				EB5A06D669385D7DD3F2FEC9A9922365 /* MWZIndoorLocation.m in Sources */,
+				E99763361B4E65DBB4CEFBC581002937 /* MWZMapwizeView.m in Sources */,
+				36D4A696AAB2AC36F43086D4C2F310B6 /* MWZMapwizeViewUISettings.m in Sources */,
+				CE54BE864A61D2A0012CC629193885C6 /* MWZSearchData.m in Sources */,
+				242E4E21393082422C6030877B6164E4 /* MWZUIOptions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D8A3A4179A08FBF9A858BFFFA6F14B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0193320C416867007C8A8B0231DCD669 /* Pods-YOYOS-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,18 +1244,178 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A73345A9F80EA8EAB34B16306F515D53 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D472264322C52E8E32039A22D45A22C /* aes_ni.c in Sources */,
+				463963FD3FB61260227EF1DEF945DC91 /* aescrypt.c in Sources */,
+				49D4CBEA39FE6A2AE35A8F2F2F08AB74 /* aeskey.c in Sources */,
+				0E55E8898CFC992BBFEADAE424B44AC7 /* aestab.c in Sources */,
+				F56B0A1DB4FCDCC82B7A3E7B507AEB0D /* crypt.c in Sources */,
+				4C7525ADC2D3F2A1BB697192EA5B513A /* fileenc.c in Sources */,
+				D07225EFA8D542D7B0D04300185C103B /* hmac.c in Sources */,
+				283DB96118F8939FDC542AE12810ADE5 /* ioapi.c in Sources */,
+				26D1F61CDBF5E575F9F552653DFBA0EC /* ioapi_buf.c in Sources */,
+				69333292EF096612AE1085AF5C3D838C /* ioapi_mem.c in Sources */,
+				3D3D070E6DA6FB94101E06B9619148C6 /* minishared.c in Sources */,
+				5F7211DD5FBC84DE717CE43CD44708BC /* prng.c in Sources */,
+				5450CA6036F8332BE381FB66DDEA6830 /* pwd2key.c in Sources */,
+				FDA3CA13520F37490F1BC6A5B2640FF6 /* sha1.c in Sources */,
+				B91DFDBA6039D23D2D5787B03FCEC783 /* SSZipArchive-dummy.m in Sources */,
+				AAB4D53FC78A98B1670033EBE25A409C /* SSZipArchive.m in Sources */,
+				B4B2EACC769B2D9DA10D0E7E30D702FE /* unzip.c in Sources */,
+				290078B31A021792B457C84B5A5A3FD4 /* zip.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE49391117F75B88382C8B4F600CD945 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDD24F11B8978D58FC9809CE96698578 /* ILIndoorLocation.m in Sources */,
+				4A351E3E8D2BFB99C2C0BDC143B9B01C /* ILIndoorLocationProvider.m in Sources */,
+				56B6BE1648C48A7002B25EC244A523DE /* IndoorLocation-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		00F76692CE84E0BDAAC6CBD1A9054926 /* PBXTargetDependency */ = {
+		02AA1B3E818ED6DAD35A8960062D9DB7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IndoorLocation;
+			target = AF360B618D54578802B211E302DC7213 /* IndoorLocation */;
+			targetProxy = 74C563DA796F6D502AA3F8850EA1BF24 /* PBXContainerItemProxy */;
+		};
+		0FB3FC9F37163DBD11498D59E264D154 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SSZipArchive;
+			target = 2AEF7C96AD3290F1938695E88317888D /* SSZipArchive */;
+			targetProxy = 4E2B95B209C1772166E43D552289E0B0 /* PBXContainerItemProxy */;
+		};
+		39F54CA8A4D935D8F4E8D5B827A21D48 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SSZipArchive;
+			target = 2AEF7C96AD3290F1938695E88317888D /* SSZipArchive */;
+			targetProxy = DDA32B3AC527E6C3BACAB49C3F1B433A /* PBXContainerItemProxy */;
+		};
+		439E95B02A46AB0C3D0D564B1DBACB95 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Alamofire;
 			target = 3383968E74B5371B20BB519B170DC7FD /* Alamofire */;
-			targetProxy = 4E9934C3D4890571CBE99630F4DB3B47 /* PBXContainerItemProxy */;
+			targetProxy = AAD6251D6DF2D6F66E13773AC33F6F60 /* PBXContainerItemProxy */;
+		};
+		4B7D8CCE08CF99AE48441EB400CD0652 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MapwizeForMapbox;
+			target = 49EC2F2E4B057B8A5A2956F5263AE094 /* MapwizeForMapbox */;
+			targetProxy = 28F65EC9B002202BDF7DCF22EF8A806F /* PBXContainerItemProxy */;
+		};
+		91D937821B2BF0461888048320BCCC6C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Mapbox-iOS-SDK";
+			target = 33FD49C316A380C97D6435712607313B /* Mapbox-iOS-SDK */;
+			targetProxy = 92B51B9093B67EB6B41E5CE651D67F62 /* PBXContainerItemProxy */;
+		};
+		9749143731A2C5C081508F5513833DF9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MapwizeUI;
+			target = D90AA3703DBDDA662DD88D45780ABB38 /* MapwizeUI */;
+			targetProxy = F5D27974A13E945E291FE76C966CE867 /* PBXContainerItemProxy */;
+		};
+		D9E64B2298B2E675A0EDE75F2BAD54B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IndoorLocation;
+			target = AF360B618D54578802B211E302DC7213 /* IndoorLocation */;
+			targetProxy = 2D4FD307170C4226C875A9E025508954 /* PBXContainerItemProxy */;
+		};
+		EE26CAE66979DA505FD9C49C4D61E47D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MapwizeForMapbox;
+			target = 49EC2F2E4B057B8A5A2956F5263AE094 /* MapwizeForMapbox */;
+			targetProxy = 18972C1839A739151026E6BD70771845 /* PBXContainerItemProxy */;
+		};
+		F1BD47EB510CC018EEF2AA5E21C85C3C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Mapbox-iOS-SDK";
+			target = 33FD49C316A380C97D6435712607313B /* Mapbox-iOS-SDK */;
+			targetProxy = C7D5EABA8AEDF89A45F6D0C0B69533B2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		25B45A26E15250660A38EB3FC5D85BEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0ED27B469B984CDFC6E78F7B774BCB7C /* MapwizeUI.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MapwizeUI/MapwizeUI-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MapwizeUI/MapwizeUI-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/MapwizeUI/MapwizeUI.modulemap";
+				PRODUCT_MODULE_NAME = MapwizeUI;
+				PRODUCT_NAME = MapwizeUI;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2F1D0D6820A0A655C276C508152702B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 889CAD9C9DA2ECB1BF114EBFD2B05ED7 /* IndoorLocation.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/IndoorLocation/IndoorLocation-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/IndoorLocation/IndoorLocation-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/IndoorLocation/IndoorLocation.modulemap";
+				PRODUCT_MODULE_NAME = IndoorLocation;
+				PRODUCT_NAME = IndoorLocation;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		3048B0C5C704DFFF688DA57F5380ED58 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -421,7 +1478,7 @@
 		};
 		386ADF17129FD9B19CFC1F2B22A12111 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A0F6B1DBF2B95867B02CA909027E6CA1 /* Alamofire.xcconfig */;
+			baseConfigurationReference = 3D42BBDE0F5BE1320A7370F1E72A8824 /* Alamofire.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -452,6 +1509,23 @@
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		46BFB9A54CE3465FD3218BDF323DC483 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76C4E1F5EF286DF066FD2520A85BA0DB /* Mapbox-iOS-SDK.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -519,7 +1593,7 @@
 			};
 			name = Debug;
 		};
-		77DDB0DFCB0003F91CBA3696CABA5BA5 /* Debug */ = {
+		8B1953A256A5E2BEA099EDEEDA5DAE0C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E68AD8B14926602F203275C40C9DC54B /* Pods-YOYOS.debug.xcconfig */;
 			buildSettings = {
@@ -557,7 +1631,59 @@
 			};
 			name = Debug;
 		};
-		937726214DABBC6BB3A853E86CB2BF65 /* Release */ = {
+		B122A4B355504B4543CB2A7510233B26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99735ECCA5B1D385F7851ED71F9F4F5F /* MapwizeForMapbox.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BABB8499700382C70F69186AE7A6966B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACE1B4FF0ACB8473BB7DEE17B557DADC /* SSZipArchive.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SSZipArchive/SSZipArchive-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SSZipArchive/SSZipArchive-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SSZipArchive/SSZipArchive.modulemap";
+				PRODUCT_MODULE_NAME = SSZipArchive;
+				PRODUCT_NAME = SSZipArchive;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BBE6EB8059AD9AD51C2240BE20368572 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B6D80ECA7031A4BE8008F82AEE18B413 /* Pods-YOYOS.release.xcconfig */;
 			buildSettings = {
@@ -596,9 +1722,152 @@
 			};
 			name = Release;
 		};
+		C28FBF87AB1DF02CD6FB7DBECC1145A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99735ECCA5B1D385F7851ED71F9F4F5F /* MapwizeForMapbox.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C4439E605361E4523071694D265A0A63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76C4E1F5EF286DF066FD2520A85BA0DB /* Mapbox-iOS-SDK.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D9E09B58CDD1EA9CC93DC180E59A216A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0ED27B469B984CDFC6E78F7B774BCB7C /* MapwizeUI.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MapwizeUI/MapwizeUI-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MapwizeUI/MapwizeUI-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/MapwizeUI/MapwizeUI.modulemap";
+				PRODUCT_MODULE_NAME = MapwizeUI;
+				PRODUCT_NAME = MapwizeUI;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DE40FB76B2E4935DEC396B5504151BA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 889CAD9C9DA2ECB1BF114EBFD2B05ED7 /* IndoorLocation.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/IndoorLocation/IndoorLocation-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/IndoorLocation/IndoorLocation-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/IndoorLocation/IndoorLocation.modulemap";
+				PRODUCT_MODULE_NAME = IndoorLocation;
+				PRODUCT_NAME = IndoorLocation;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E082B9C0D53F9BEDF27A06F23AD5D04D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACE1B4FF0ACB8473BB7DEE17B557DADC /* SSZipArchive.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SSZipArchive/SSZipArchive-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SSZipArchive/SSZipArchive-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SSZipArchive/SSZipArchive.modulemap";
+				PRODUCT_MODULE_NAME = SSZipArchive;
+				PRODUCT_NAME = SSZipArchive;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		F4FBFD784E24DCB92AFC73B726590104 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A0F6B1DBF2B95867B02CA909027E6CA1 /* Alamofire.xcconfig */;
+			baseConfigurationReference = 3D42BBDE0F5BE1320A7370F1E72A8824 /* Alamofire.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -634,11 +1903,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		09FC826A138838B9ED4365930F9F7D43 /* Build configuration list for PBXNativeTarget "Pods-YOYOS" */ = {
+		1D08C58AACDA12DA5792C4E4C07A064F /* Build configuration list for PBXNativeTarget "IndoorLocation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				77DDB0DFCB0003F91CBA3696CABA5BA5 /* Debug */,
-				937726214DABBC6BB3A853E86CB2BF65 /* Release */,
+				2F1D0D6820A0A655C276C508152702B6 /* Debug */,
+				DE40FB76B2E4935DEC396B5504151BA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C6960A5FF20F02C0E5285917190C0B6 /* Build configuration list for PBXNativeTarget "SSZipArchive" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BABB8499700382C70F69186AE7A6966B /* Debug */,
+				E082B9C0D53F9BEDF27A06F23AD5D04D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -648,6 +1926,42 @@
 			buildConfigurations = (
 				5B0C8287D755FD95091CF35D87FB8B2D /* Debug */,
 				3048B0C5C704DFFF688DA57F5380ED58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83F7A7525EE724C50FF6E579E6AB7E7F /* Build configuration list for PBXAggregateTarget "Mapbox-iOS-SDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4439E605361E4523071694D265A0A63 /* Debug */,
+				46BFB9A54CE3465FD3218BDF323DC483 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		920E08ACD9C8972D874CE8B694EDB8C4 /* Build configuration list for PBXAggregateTarget "MapwizeForMapbox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B122A4B355504B4543CB2A7510233B26 /* Debug */,
+				C28FBF87AB1DF02CD6FB7DBECC1145A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		97A4BCF7737B50AD6884B07BEBDDADDA /* Build configuration list for PBXNativeTarget "MapwizeUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25B45A26E15250660A38EB3FC5D85BEE /* Debug */,
+				D9E09B58CDD1EA9CC93DC180E59A216A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B2EE615AB8A2A15B15277BBD95E14F80 /* Build configuration list for PBXNativeTarget "Pods-YOYOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B1953A256A5E2BEA099EDEEDA5DAE0C /* Debug */,
+				BBE6EB8059AD9AD51C2240BE20368572 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
