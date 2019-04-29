@@ -6,4 +6,5 @@ use_frameworks!
 target 'YOYOS' do
 pod 'Alamofire', '~> 4.5'
 pod 'MapwizeUI', '~> 1.0'
+pod 'Firebase/Core'
 end
