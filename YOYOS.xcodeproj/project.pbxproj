@@ -13,6 +13,7 @@
 		7A612C3222577BF30062DEFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A612C3122577BF30062DEFE /* Assets.xcassets */; };
 		7A612C3522577BF30062DEFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A612C3322577BF30062DEFE /* LaunchScreen.storyboard */; };
 		7A612C4022577BF30062DEFE /* YOYOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A612C3F22577BF30062DEFE /* YOYOSTests.swift */; };
+		7A702551227726B7005564FE /* Images in Resources */ = {isa = PBXBuildFile; fileRef = 7A702550227726B7005564FE /* Images */; };
 		7A83DF3F2257C947003732F3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A83DF3E2257C947003732F3 /* LoginViewController.swift */; };
 		7A8A27D2225CC7440012FD6C /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8A27D1225CC7440012FD6C /* MapViewController.swift */; };
 		9C6ECA21A306B50BB0EEAC31 /* Pods_YOYOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ACA30ED6DCA9CEAEDDD00F6 /* Pods_YOYOS.framework */; };
@@ -42,10 +43,11 @@
 		7A612C3B22577BF30062DEFE /* YOYOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YOYOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A612C3F22577BF30062DEFE /* YOYOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YOYOSTests.swift; sourceTree = "<group>"; };
 		7A612C4122577BF30062DEFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A702550227726B7005564FE /* Images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Images; sourceTree = "<group>"; };
 		7A83DF3E2257C947003732F3 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		7A8A27D1225CC7440012FD6C /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		7ACA30ED6DCA9CEAEDDD00F6 /* Pods_YOYOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YOYOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CF5B38AF2277155500D573E5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CF5B38AF2277155500D573E5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 		7A612C2622577BF20062DEFE /* YOYOS */ = {
 			isa = PBXGroup;
 			children = (
+				7A702550227726B7005564FE /* Images */,
 				7A00F40A2257B0F8007A4F0B /* Controllers */,
 				7A612C2722577BF20062DEFE /* AppDelegate.swift */,
 				7A612C2B22577BF20062DEFE /* Main.storyboard */,
@@ -220,6 +223,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A702551227726B7005564FE /* Images in Resources */,
 				7A612C3522577BF30062DEFE /* LaunchScreen.storyboard in Resources */,
 				CF5B38B02277155500D573E5 /* GoogleService-Info.plist in Resources */,
 				7A612C3222577BF30062DEFE /* Assets.xcassets in Resources */,
