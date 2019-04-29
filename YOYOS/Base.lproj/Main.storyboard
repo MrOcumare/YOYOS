@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zDq-mq-1LO">
-    <device id="retina5_9" orientation="portrait">
+    <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,7 +15,7 @@
             <objects>
                 <navigationController id="zDq-mq-1LO" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="BIN-vA-cz2">
-                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -31,7 +31,7 @@
             <objects>
                 <viewController id="wxF-lW-JCa" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HjU-0F-fjw">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dat-Jv-bE0">
@@ -64,12 +64,12 @@
             </objects>
             <point key="canvasLocation" x="-2303.1999999999998" y="116.74876847290641"/>
         </scene>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="FOW-VM-9yM">
             <objects>
-                <viewController id="NXE-uN-T4E" sceneMemberID="viewController">
+                <viewController id="NXE-uN-T4E" customClass="LoginViewController" customModule="YOYOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zgf-bx-hxM">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cJ5-FH-coG">
@@ -105,64 +105,46 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Login"/>
                                 <connections>
-                                    <segue destination="cPJ-ey-zmX" kind="show" id="VqQ-zZ-TUP"/>
+                                    <action selector="loginAction:" destination="NXE-uN-T4E" eventType="touchUpInside" id="hoE-nG-OrE"/>
+                                    <segue destination="cPJ-ey-zmX" kind="presentation" identifier="logIinTOmapview" id="G5d-US-gIn"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="O8D-b1-g8q"/>
                     </view>
+                    <connections>
+                        <outlet property="email" destination="aBb-oy-JOi" id="gwa-Vz-ROF"/>
+                        <outlet property="loginButton" destination="qB0-32-qnW" id="oPA-Or-cSX"/>
+                        <outlet property="password" destination="jlp-vf-cFk" id="loU-5X-XvQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UZX-04-Syc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1255.2" y="-302.21674876847294"/>
-        </scene>
-        <!--Login View Controller-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="YOYOS" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="LoginView">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="atG-oK-2B6">
-                                <rect key="frame" x="168" y="415" width="38" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Login"/>
-                                <connections>
-                                    <action selector="LoginAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kz4-7A-Lmn"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="119" y="117"/>
         </scene>
         <!--Map View Controller-->
         <scene sceneID="GcN-Ii-nnI">
             <objects>
                 <viewController id="cPJ-ey-zmX" customClass="MapViewController" customModule="YOYOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FUU-xk-AWJ" customClass="MapView">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Qw8-ub-xgr"/>
                     </view>
+                    <navigationItem key="navigationItem" id="AXa-bZ-AYF"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6CR-N2-YsO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1254" y="117"/>
+            <point key="canvasLocation" x="-422" y="651"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign Up View Controller-->
         <scene sceneID="cxS-Y2-ayZ">
             <objects>
-                <viewController id="Wxp-J1-4cb" sceneMemberID="viewController">
+                <viewController id="Wxp-J1-4cb" customClass="SignUpViewController" customModule="YOYOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cpn-ZC-9sP">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oj3-QR-xmy">
@@ -212,13 +194,20 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Signup"/>
                                 <connections>
-                                    <segue destination="cPJ-ey-zmX" kind="show" id="f4A-n9-ZYy"/>
+                                    <action selector="signUpAction:" destination="Wxp-J1-4cb" eventType="touchUpInside" id="R0Q-8Q-hLx"/>
+                                    <segue destination="cPJ-ey-zmX" kind="presentation" identifier="signupTOmapview" id="WSX-QF-wMM"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="BC8-nd-Xq0"/>
                     </view>
+                    <connections>
+                        <outlet property="email" destination="qhN-w6-ipp" id="qfT-cO-45j"/>
+                        <outlet property="password" destination="eip-DV-5Vo" id="VKm-qb-LBI"/>
+                        <outlet property="passwordConfirm" destination="rhE-1t-vBf" id="uP3-ZF-Fpc"/>
+                        <outlet property="signUpButton" destination="bz7-TU-dO8" id="BLd-4A-Ziq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zUp-XW-vtP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -226,6 +215,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="f4A-n9-ZYy"/>
+        <segue reference="WSX-QF-wMM"/>
     </inferredMetricsTieBreakers>
 </document>

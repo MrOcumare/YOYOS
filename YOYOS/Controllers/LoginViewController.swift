@@ -2,32 +2,58 @@
 //  LoginViewController.swift
 //  YOYOS
 //
-//  Created by Рубен Оганесян on 05.04.2019.
+//  Created by Mr.Ocumare on 29/04/2019.
 //  Copyright © 2019 park.mail.ru. All rights reserved.
 //
 
 import UIKit
-import Alamofire
+import Firebase
 
-class LoginViewController: UIViewController {
-
+class LoginViewController: UIViewController, UITextFieldDelegate {
+    var gradient:CAGradientLayer?
+    @IBOutlet weak var loginButton: UIButton!
+    
+    @IBOutlet weak var email: UITextField!
+    @IBOutlet weak var password: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.xqqqqq
+        addGradient()
+        loginButton.layer.cornerRadius = 10
+        email.delegate = self
+        password.delegate = self
     }
     
-
-    @IBAction func LoginAction(_ sender: UIButton) {
-        request("http://127.0.0.1:5000/login", method: .post, parameters: ["foo": "bar"], encoding: JSONEncoding.default).responseJSON { response in
-            print(response)
+    @IBAction func loginAction(_ sender: Any) {
+        
+        Auth.auth().signIn(withEmail: email.text!, password: password.text!) { (user, error) in
+            if error == nil{
+                self.performSegue(withIdentifier: "logIinTOmapview", sender: self)
+            }
+            else{
+                let alertController = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
+                let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                
+                alertController.addAction(defaultAction)
+                self.present(alertController, animated: true, completion: nil)
+            }
         }
+        
     }
     
-
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {   //delegate method
+        textField.resignFirstResponder()
+        return true
+    }
+    
+    func addGradient() {
+        gradient = CAGradientLayer()
+        let startColor = UIColor(red: 3/255, green: 196/255, blue: 190/255, alpha: 1)
+        let endColor = UIColor(red: 0, green: 0, blue: 0, alpha: 1)
+        gradient?.colors = [startColor.cgColor,endColor.cgColor]
+        gradient?.startPoint = CGPoint(x: 0, y: 0)
+        gradient?.endPoint = CGPoint(x: 0, y:1)
+        gradient?.frame = view.frame
+        self.view.layer.insertSublayer(gradient!, at: 0)
+    }
 }
