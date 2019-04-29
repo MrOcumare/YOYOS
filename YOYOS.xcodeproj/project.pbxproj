@@ -17,6 +17,7 @@
 		7A8A27D2225CC7440012FD6C /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8A27D1225CC7440012FD6C /* MapViewController.swift */; };
 		9C6ECA21A306B50BB0EEAC31 /* Pods_YOYOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ACA30ED6DCA9CEAEDDD00F6 /* Pods_YOYOS.framework */; };
 		CF5B38B02277155500D573E5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF5B38AF2277155500D573E5 /* GoogleService-Info.plist */; };
+		CF5B38B22277210C00D573E5 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5B38B12277210C00D573E5 /* SignUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		7A8A27D1225CC7440012FD6C /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		7ACA30ED6DCA9CEAEDDD00F6 /* Pods_YOYOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YOYOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF5B38AF2277155500D573E5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CF5B38B12277210C00D573E5 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 			children = (
 				7A83DF3E2257C947003732F3 /* LoginViewController.swift */,
 				7A8A27D1225CC7440012FD6C /* MapViewController.swift */,
+				CF5B38B12277210C00D573E5 /* SignUpViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -300,6 +303,7 @@
 				7A612C3022577BF20062DEFE /* YOYOS.xcdatamodeld in Sources */,
 				7A612C2822577BF20062DEFE /* AppDelegate.swift in Sources */,
 				7A8A27D2225CC7440012FD6C /* MapViewController.swift in Sources */,
+				CF5B38B22277210C00D573E5 /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
