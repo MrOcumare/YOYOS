@@ -9,8 +9,8 @@ class MapViewController: UIViewController {
         super.viewDidLoad()
         
         let opts = MWZUIOptions()
-        opts.centerOnPlaceId = "5bc49413bf0ed600114db212"
-        opts.centerOnVenueId = "56b20714c3fa800b00d8f0b5"
+        opts.centerOnPlaceId = "5caa24cebbaa920016f413f2"
+        opts.centerOnVenueId = "5caa23edad97ec0016745290"
         opts.centerOnLocation = MWZLatLngFloor(latitude: 50.6331, longitude: 3.0198, floor: 0)
         
         let settings = MWZMapwizeViewUISettings()
