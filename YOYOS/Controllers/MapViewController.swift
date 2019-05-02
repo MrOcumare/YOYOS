@@ -11,7 +11,7 @@ class MapViewController: UIViewController {
         let opts = MWZUIOptions()
         opts.centerOnPlaceId = "5caa24cebbaa920016f413f2"
         opts.centerOnVenueId = "5caa23edad97ec0016745290"
-        opts.centerOnLocation = MWZLatLngFloor(latitude: 50.6331, longitude: 3.0198, floor: 0)
+        opts.centerOnLocation = MWZLatLngFloor(latitude: 55.765, longitude: 37.6847, floor: 1)
         
         let settings = MWZMapwizeViewUISettings()
         settings.followUserButtonIsHidden = false
@@ -44,12 +44,19 @@ extension MapViewController: MWZMapwizeViewDelegate {
     
     func mapwizeViewDidTap(onMenu mapwizeView: MWZMapwizeView!) {
         print("onMenu")
-        let alert = UIAlertController.init(title: "User action",
-                                           message: "Click on the menu",
-                                           preferredStyle: .actionSheet)
-        let action = UIAlertAction.init(title: "Cancel", style: .destructive, handler: nil)
-        alert.addAction(action)
-        self.present(alert, animated: true, completion: nil)
+       
+        
+//        let alert = UIAlertController.init(title: "User action",
+//                                           message: "Click on the menu",
+//                                           preferredStyle: .actionSheet)
+//        let action = UIAlertAction.init(title: "Cancel", style: .destructive, handler: nil)
+//        alert.addAction(action)
+//        self.present(alert, animated: true, completion: nil)
+        
+//        let main = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard?.instantiateViewController(withIdentifier: "BIBA")
+        self.present(vc!, animated: true, completion: nil)
+//        self.navigationController?.pushViewController(vc!, animated: true)
     }
     
     func mapwizeView(_ mapwizeView: MWZMapwizeView!, didTapOnPlaceInformationButton place: MWZPlace!) {
